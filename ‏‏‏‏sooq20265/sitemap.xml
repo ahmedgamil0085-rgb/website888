@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://webmakers.com/index.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://webmakers.com/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webmakers.com/index.html?lang=en"/>
+    </url>
+    <url>
+        <loc>https://webmakers.com/menu.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://webmakers.com/menu.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webmakers.com/menu.html?lang=en"/>
+    </url>
+    <url>
+        <loc>https://webmakers.com/reservation.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://webmakers.com/reservation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webmakers.com/reservation.html?lang=en"/>
+    </url>
+    <url>
+        <loc>https://webmakers.com/about.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://webmakers.com/about.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webmakers.com/about.html?lang=en"/>
+    </url>
+    <url>
+        <loc>https://webmakers.com/contact.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://webmakers.com/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webmakers.com/contact.html?lang=en"/>
+    </url>
+    <url>
+        <loc>https://webmakers.com/product.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://webmakers.com/product.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webmakers.com/product.html?lang=en"/>
+    </url>
+    <url>
+        <loc>https://webmakers.com/cart.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://webmakers.com/careers.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://webmakers.com/wishlist.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://webmakers.com/faq.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://webmakers.com/help.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://webmakers.com/privacy-policy.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+</urlset>

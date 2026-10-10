@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a1a">
+    <title data-ar="سياسة الخصوصية | WebMakers Luxury Restaurant" data-en="Privacy Policy | WebMakers Luxury Restaurant">سياسة الخصوصية | WebMakers Luxury Restaurant</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="theme.min.css?v=8.0">
+    <link rel="stylesheet" href="style.min.css?v=8.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <style>
+        .custom-page-hero {
+            padding: 140px 0 60px;
+            background: var(--overlay-gradient, linear-gradient(to bottom, rgba(0,0,0,0.8), #050505)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
+            text-align: center;
+            transition: var(--transition, all 0.3s ease);
+        }
+
+        .custom-page-hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            color: #ffffff;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .custom-page-hero p {
+            color: var(--primary-glow, var(--primary-color));
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .content-card-luxury {
+            background: var(--card-bg, rgba(15, 15, 15, 0.95));
+            border: 1px solid var(--glass-border, rgba(15, 112, 230, 0.3));
+            border-radius: 35px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px var(--shadow-dark, rgba(0, 0, 0, 0.15));
+            backdrop-filter: blur(20px);
+            margin: -40px auto 80px;
+            max-width: 950px;
+            position: relative;
+            z-index: 10;
+            transition: var(--transition, all 0.3s ease);
+        }
+
+        .privacy-block {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.05));
+        }
+
+        .privacy-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .privacy-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .privacy-title i {
+            width: 45px;
+            height: 45px;
+            background: rgba(15, 112, 230, 0.1);
+            border: 1px solid var(--glass-border, rgba(15, 112, 230, 0.2));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            transition: var(--transition, all 0.3s ease);
+        }
+
+        .privacy-title h3 {
+            color: var(--card-text-main, var(--text-main, #ffffff));
+            font-size: 1.5rem;
+            font-family: 'El Messiri', sans-serif;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .privacy-text {
+            color: var(--card-text-muted, var(--text-body, #e0e0e0));
+            font-size: 1.1rem;
+            line-height: 2;
+        }
+
+        .privacy-text ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .privacy-text ul li {
+            position: relative;
+            padding-right: 25px;
+            margin-bottom: 12px;
+            color: var(--card-text-muted, var(--text-body, #e0e0e0));
+        }
+
+        body[dir="ltr"] .privacy-text ul li {
+            padding-right: 0;
+            padding-left: 25px;
+        }
+
+        .privacy-text ul li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            color: var(--primary-color);
+        }
+
+        body[dir="ltr"] .privacy-text ul li::before {
+            right: auto;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .content-card-luxury {
+                padding: 35px 20px;
+                border-radius: 25px;
+            }
+            .privacy-title h3 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Masterpiece Page Preloader -->
+    <div id="pagePreloader" class="page-preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo-wrapper">
+                <img src="logo.png" alt="WebMakers Logo" class="preloader-logo">
+                <div class="preloader-glow-ring"></div>
+            </div>
+            <div class="preloader-brand">WebMakers</div>
+            <div class="preloader-text" data-ar="جاري تحضير تجربتك الملكية..." data-en="Preparing Your Royal Experience...">جاري تحضير تجربتك الملكية...</div>
+            <div class="preloader-bar-wrapper">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Master Header Section -->
+    <header role="banner">
+        <nav class="yt-header-nav container" role="navigation" aria-label="القائمة الرئيسية للموقع">
+            <!-- 1. Right Section: Hamburger Menu + Logo & SaaS Badge -->
+            <div class="yt-nav-right">
+                <button class="mobile-nav-toggle" id="mobileNavToggle" title="القائمة / Menu" aria-label="فتح القائمة الجانبية">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <a href="index.html" class="logo" aria-label="مطعم ويب ميكرز الفاخر - الرئيسية">
+                    <img src="logo.png" alt="شعار مطعم ويب ميكرز الفاخر" class="logo-img">
+                    <span class="logo-text">WebMakers</span>
+                    <span class="yt-saas-badge">SA</span>
+                </a>
+            </div>
+
+            <!-- 2. Center Section: YouTube-Style Search Bar -->
+            <div class="yt-nav-center">
+                <div class="yt-search-form nav-search-trigger" role="button" aria-label="بحث ذكي AI">
+                    <span class="yt-search-mobile-label yt-search-label" data-ar="بحث ذكي AI ✨" data-en="AI Search ✨">بحث ذكي AI ✨</span>
+                    <button class="yt-search-btn nav-search-trigger" type="button" title="بحث بالذكاء الاصطناعي / AI Search" aria-label="بحث بالذكاء الاصطناعي">
+                        <svg class="ai-search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="10" cy="10" r="5.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.5 14.5L19.5 19.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                            <path d="M16.5 1.5C16.5 3.8 15.2 4.8 13.5 5C15.2 5.2 16.5 6.2 16.5 8.5C16.5 6.2 17.8 5.2 19.5 5C17.8 4.8 16.5 3.8 16.5 1.5Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3. Left Section: Actions -->
+            <div class="yt-nav-left">
+                <div class="nav-actions-luxury yt-actions" role="toolbar" aria-label="أدوات التحكم السريع">
+                    <div class="header-cart-wishlist-capsule" role="group" aria-label="المفضلة وسلة المشتريات">
+                        <a href="wishlist.html" class="nav-badge-wrapper" title="المفضلة / Wishlist" aria-label="عرض قائمة المأكولات المفضلة">
+                            <i class="far fa-heart" aria-hidden="true"></i>
+                            <span class="nav-badge wishlist-count-badge hidden" aria-live="polite">0</span>
+                        </a>
+                        <span class="capsule-divider" aria-hidden="true"></span>
+                        <a href="cart.html" class="nav-badge-wrapper" title="السلة / Cart" aria-label="عرض سلة المشتريات">
+                            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="nav-badge cart-count-badge hidden" aria-live="polite">0</span>
+                        </a>
+                    </div>
+                    <div class="luxury-lang-dropdown desktop-lang-dropdown yt-lang-dropdown" role="region" aria-label="قائمة اختيار اللغة">
+                        <div class="lld-trigger">
+                            <i class="fas fa-globe lld-globe"></i>
+                            <span class="lld-current-lang">العربية</span>
+                            <i class="fas fa-chevron-down lld-arrow"></i>
+                        </div>
+                        <div class="lld-menu">
+                            <div class="lld-item active" data-lang="ar">
+                                <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                            <div class="lld-item" data-lang="en">
+                                <span><span class="flag-icon">🇬🇧</span> English</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section class="custom-page-hero">
+        <div class="container">
+            <h1 data-ar="سياسة الخصوصية وحماية البيانات" data-en="Privacy & Data Protection Policy">سياسة الخصوصية وحماية البيانات</h1>
+            <p data-ar="التزامنا التام بضمان سرية وأمان معلومات ضيوفنا الكرام" data-en="Our absolute commitment to ensuring the privacy & security of our esteemed guests">التزامنا التام بضمان سرية وأمان معلومات ضيوفنا الكرام</p>
+            <div class="divider-gold" style="margin-top: 20px;"></div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="content-card-luxury reveal active">
+
+            <div class="privacy-block">
+                <div class="privacy-title">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3 data-ar="1. مقدمة وتعهد الخصوصية" data-en="1. Introduction & Privacy Commitment">1. مقدمة وتعهد الخصوصية</h3>
+                </div>
+                <div class="privacy-text">
+                    <p data-ar="نحن في WebMakers Luxury Restaurant نعتبر الخصوصية حجر الزاوية في تجربتنا الملكية. توضح هذه السياسة كيف نتعامل مع المعلومات التي توفرها لنا عند استخدام موقعنا الإلكتروني، أو إجراء الحجوزات أو التفاعل مع خدماتنا."
+                       data-en="At WebMakers Luxury Restaurant, we consider privacy the cornerstone of our royal experience. This policy explains how we handle the information you provide when using our website, making reservations, or interacting with our services.">
+                       نحن في WebMakers Luxury Restaurant نعتبر الخصوصية حجر الزاوية في تجربتنا الملكية. توضح هذه السياسة كيف نتعامل مع المعلومات التي توفرها لنا عند استخدام موقعنا الإلكتروني، أو إجراء الحجوزات أو التفاعل مع خدماتنا.
+                    </p>
+                </div>
+            </div>
+
+            <div class="privacy-block">
+                <div class="privacy-title">
+                    <i class="fas fa-database"></i>
+                    <h3 data-ar="2. البيانات التي نجمعها" data-en="2. Data We Collect">2. البيانات التي نجمعها</h3>
+                </div>
+                <div class="privacy-text">
+                    <p data-ar="نجمع البيانات الضامنة لتقديم أفضل مستويات الخدمة والراحة:" data-en="We collect data strictly required to ensure top-tier service and comfort:">
+                       نجمع البيانات الضامنة لتقديم أفضل مستويات الخدمة والراحة:
+                    </p>
+                    <ul>
+                        <li data-ar="بيانات الحجز والاتصال: الاسم، رقم الهاتف والبريد الإلكتروني لتأكيد الحجوزات."
+                            data-en="Reservation and contact details: Name, phone number, and email to confirm table bookings.">
+                            بيانات الحجز والاتصال: الاسم، رقم الهاتف والبريد الإلكتروني لتأكيد الحجوزات.
+                        </li>
+                        <li data-ar="تفضيلات الطعام والفعاليات: الملاحظات الخاصة بالحساسية الغذائية أو ترتيبات المناسبات الخاصة."
+                            data-en="Dining preferences & events: Special notes for food allergies or custom event arrangements.">
+                            تفضيلات الطعام والفعاليات: الملاحظات الخاصة بالحساسية الغذائية أو ترتيبات المناسبات الخاصة.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="privacy-block">
+                <div class="privacy-title">
+                    <i class="fas fa-lock"></i>
+                    <h3 data-ar="3. حماية البيانات والسرية" data-en="3. Data Security & Confidentiality">3. حماية البيانات والسرية</h3>
+                </div>
+                <div class="privacy-text">
+                    <p data-ar="نحن نضمن لك عدم بيع أو مشاركة بياناتك الشخصية مع أي طرف ثالث. يتم تخزين جميع البيانات ببروتوكولات تشفير آمنة (SSL & Cloud Encryption) لضمان أقصى درجات الأمان."
+                       data-en="We guarantee that your personal data is never sold or shared with any third parties. All data is encrypted and securely stored using modern SSL & cloud protocols.">
+                       نحن نضمن لك عدم بيع أو مشاركة بياناتك الشخصية مع أي طرف ثالث. يتم تخزين جميع البيانات ببروتوكولات تشفير آمنة (SSL & Cloud Encryption) لضمان أقصى درجات الأمان.
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="index.html" class="btn-gold-glow" data-ar="العودة للصفحة الرئيسية" data-en="Return to Home Page">
+                    <span>العودة للصفحة الرئيسية</span>
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Main Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer Top: Newsletter -->
+            <div class="footer-top-area reveal">
+                <div class="footer-about-newsletter">
+                    <a href="index.html" class="logo">
+                        <img src="logo.png" alt="Logo" class="logo-img">
+                        <span class="logo-text">WebMakers</span>
+                    </a>
+                    <p style="color: var(--footer-text-color, #cbd5e1); max-width: 500px;" data-ar="نحن نؤمن بأن الطعام هو لغة تواصل عالمية، لذا نسعى لتقديم تجربة تذوق تجمع بين الفن والفخامة في كل طبق نقدمه." data-en="We believe food is a universal language, so we strive to offer a tasting experience that blends art and luxury in every dish we serve.">نحن نؤمن بأن الطعام هو لغة تواصل عالمية، لذا نسعى لتقديم تجربة تذوق تجمع بين الفن والفخامة في كل طبق نقدمه.</p>
+                </div>
+                <div class="newsletter-box">
+                    <h3 data-ar="انضم إلى قائمة الـ VIP" data-en="Join the VIP List">انضم إلى قائمة الـ VIP</h3>
+                    <p data-ar="كن أول من يعرف عن عروضنا الحصرية وأطباقنا الجديدة." data-en="Be the first to know about our exclusive offers and new dishes.">كن أول من يعرف عن عروضنا الحصرية وأطباقنا الجديدة.</p>
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <!-- Invisible Honeypot Trap for Bot Protection -->
+                        <div style="display: none !important; opacity: 0; position: absolute; left: -9999px;" aria-hidden="true">
+                            <input type="text" name="website_hp_check" class="hp-security-check" tabindex="-1" autocomplete="off">
+                        </div>
+                        <input type="email" placeholder="بريدك الإلكتروني" data-ar="بريدك الإلكتروني" data-en="Your Email" required>
+                        <button type="submit" class="btn-subscribe" data-ar="اشترك الآن" data-en="Subscribe Now">اشترك الآن <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div id="newsletterSuccess" style="display:none; color: var(--primary-color); margin-top: 15px; font-weight: bold;" data-ar="شكراً لانضمامك إلينا!" data-en="Thank you for joining us!">
+                        <i class="fas fa-check-circle"></i> شكراً لانضمامك إلينا!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Grid -->
+            <div class="footer-grid">
+                <!-- Column 1: Links -->
+                <div class="footer-col reveal">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-ar="الرئيسية" data-en="Home"><i class="fas fa-house"></i> الرئيسية</a></li>
+                        <li><a href="menu.html" data-ar="المنيو العالمي" data-en="Global Menu"><i class="fas fa-utensils"></i> المنيو العالمي</a></li>
+                        <li><a href="about.html" data-ar="قصة نجاحنا" data-en="Our Success Story"><i class="fas fa-circle-info"></i> قصة نجاحنا</a></li>
+                        <li><a href="cart.html" data-ar="سلة المشتريات" data-en="Shopping Cart"><i class="fas fa-shopping-basket"></i> سلة المشتريات</a></li>
+                        <li><a href="wishlist.html" data-ar="القائمة المفضلة" data-en="Wishlist"><i class="fas fa-heart"></i> القائمة المفضلة</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Working Hours -->
+                <div class="footer-col reveal" style="transition-delay: 0.1s;">
+                    <h4 data-ar="ساعات العمل" data-en="Working Hours">ساعات العمل</h4>
+                    <div class="working-hours-card">
+                        <div class="hour-item">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div class="hour-details">
+                                <span class="day" data-ar="الأحد - الخميس" data-en="Sunday - Thursday">الأحد - الخميس</span>
+                                <span class="time" data-ar="1:00 م - 1:00 ص" data-en="1:00 PM - 1:00 AM">1:00 م - 1:00 ص</span>
+                            </div>
+                        </div>
+                        <div class="hour-item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <div class="hour-details">
+                                <span class="day" data-ar="الجمعة - السبت" data-en="Friday - Saturday">الجمعة - السبت</span>
+                                <span class="time" data-ar="2:00 م - 2:00 ص" data-en="2:00 PM - 2:00 AM">2:00 م - 2:00 ص</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-icons-v2">
+                        <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/96700000000" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col reveal" style="transition-delay: 0.2s;">
+                    <h4 data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</h4>
+                    <ul class="contact-info-list">
+                        <li>
+                            <a href="https://maps.google.com" target="_blank">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span data-ar="صنعاء، الحي السياسي، شارع بغداد" data-en="Baghdad St, Political District, Sana'a">صنعاء، الحي السياسي، شارع بغداد</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+967777777777">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span dir="ltr"><span class="country-code">+967</span> 777 777 777</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+9671444444">
+                                <i class="fa-solid fa-phone"></i>
+                                <span dir="ltr"><span class="country-code">+967</span> 1 444 444</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:vip@webmakers-ye.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>vip@webmakers-ye.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-ar="خدمة العملاء" data-en="Customer Service">خدمة العملاء</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Mobile Only Column: Important Links -->
+                <div class="footer-col reveal mobile-only-important-col" style="transition-delay: 0.3s;">
+                    <h4 data-ar="روابط تهمك" data-en="Important Links">روابط تهمك</h4>
+                    <ul class="contact-info-list">
+                        <li>
+                            <a href="privacy-policy.html">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="careers.html">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span data-ar="الوظائف" data-en="Careers">الوظائف</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span data-ar="الأسئلة الشائعة" data-en="FAQs">الأسئلة الشائعة</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="luxury-lang-dropdown">
+                                <div class="lld-trigger">
+                                    <i class="fas fa-globe lld-globe"></i>
+                                    <span class="lld-current-lang">العربية</span>
+                                    <i class="fas fa-chevron-down lld-arrow"></i>
+                                </div>
+                                <div class="lld-menu">
+                                    <div class="lld-item active" data-lang="ar">
+                                        <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                        <i class="fas fa-check lld-check"></i>
+                                    </div>
+                                    <div class="lld-item" data-lang="en">
+                                        <span><span class="flag-icon">🇬🇧</span> English</span>
+                                        <i class="fas fa-check lld-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="copyright-v2" data-ar="&copy; 2026 جميع الحقوق محفوظة لـ <b>WebMakers Luxury Restaurant</b>" data-en="&copy; 2026 All Rights Reserved to <b>WebMakers Luxury Restaurant</b>">
+                    &copy; 2026 جميع الحقوق محفوظة لـ <b>WebMakers Luxury Restaurant</b>
+                </div>
+
+                <!-- Desktop Bottom Links (Visible ONLY on Desktop/Laptop) -->
+                <div class="footer-bottom-links desktop-bottom-links">
+                    <div class="luxury-lang-dropdown">
+                        <div class="lld-trigger">
+                            <i class="fas fa-globe lld-globe"></i>
+                            <span class="lld-current-lang">العربية</span>
+                            <i class="fas fa-chevron-down lld-arrow"></i>
+                        </div>
+                        <div class="lld-menu">
+                            <div class="lld-item active" data-lang="ar">
+                                <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                            <div class="lld-item" data-lang="en">
+                                <span><span class="flag-icon">🇬🇧</span> English</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="privacy-policy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy"><i class="fa-solid fa-shield-halved"></i> سياسة الخصوصية</a>
+                    <a href="careers.html" data-ar="الوظائف" data-en="Careers"><i class="fa-solid fa-briefcase"></i> الوظائف</a>
+                    <a href="faq.html" data-ar="الأسئلة الشائعة" data-en="FAQs"><i class="fa-solid fa-circle-question"></i> الأسئلة الشائعة</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.min.js?v=8.0"></script>
+</body>
+</html>

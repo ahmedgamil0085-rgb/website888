@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>تفاصيل الصنف | WebMakers Luxury</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=El+Messiri:wght@700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="theme.min.css?v=8.0">
+    <link rel="stylesheet" href="style.min.css?v=8.0">
+    <link rel="stylesheet" href="product.min.css?v=8.0">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <!-- Masterpiece Page Preloader -->
+    <div id="pagePreloader" class="page-preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo-wrapper">
+                <img src="logo.png" alt="WebMakers Logo" class="preloader-logo">
+                <div class="preloader-glow-ring"></div>
+            </div>
+            <div class="preloader-brand">WebMakers</div>
+            <div class="preloader-text" data-ar="جاري تحضير تجربتك الملكية..." data-en="Preparing Your Royal Experience...">جاري تحضير تجربتك الملكية...</div>
+            <div class="preloader-bar-wrapper">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Master Header Section -->
+    <header role="banner">
+        <nav class="yt-header-nav container" role="navigation" aria-label="القائمة الرئيسية للموقع">
+            <!-- 1. Right Section: Hamburger Menu + Logo & SaaS Badge -->
+            <div class="yt-nav-right">
+                <button class="mobile-nav-toggle" id="mobileNavToggle" title="القائمة / Menu" aria-label="فتح القائمة الجانبية">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <a href="index.html" class="logo" aria-label="مطعم ويب ميكرز الفاخر - الرئيسية">
+                    <img src="logo.png" alt="شعار مطعم ويب ميكرز الفاخر" class="logo-img">
+                    <span class="logo-text">WebMakers</span>
+                    <span class="yt-saas-badge">SA</span>
+                </a>
+            </div>
+
+            <!-- 2. Center Section: YouTube-Style Search Bar -->
+            <div class="yt-nav-center">
+                <div class="yt-search-form nav-search-trigger" role="button" aria-label="بحث ذكي AI">
+                    <span class="yt-search-mobile-label yt-search-label" data-ar="بحث ذكي AI ✨" data-en="AI Search ✨">بحث ذكي AI ✨</span>
+                    <button class="yt-search-btn nav-search-trigger" type="button" title="بحث بالذكاء الاصطناعي / AI Search" aria-label="بحث بالذكاء الاصطناعي">
+                        <svg class="ai-search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="10" cy="10" r="5.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.5 14.5L19.5 19.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                            <path d="M16.5 1.5C16.5 3.8 15.2 4.8 13.5 5C15.2 5.2 16.5 6.2 16.5 8.5C16.5 6.2 17.8 5.2 19.5 5C17.8 4.8 16.5 3.8 16.5 1.5Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3. Left Section: Actions -->
+            <div class="yt-nav-left">
+                <div class="nav-actions-luxury yt-actions" role="toolbar" aria-label="أدوات التحكم السريع">
+                    <div class="header-cart-wishlist-capsule" role="group" aria-label="المفضلة وسلة المشتريات">
+                        <a href="wishlist.html" class="nav-badge-wrapper" title="المفضلة / Wishlist" aria-label="عرض قائمة المأكولات المفضلة">
+                            <i class="far fa-heart" aria-hidden="true"></i>
+                            <span class="nav-badge wishlist-count-badge hidden" aria-live="polite">0</span>
+                        </a>
+                        <span class="capsule-divider" aria-hidden="true"></span>
+                        <a href="cart.html" class="nav-badge-wrapper" title="السلة / Cart" aria-label="عرض سلة المشتريات">
+                            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="nav-badge cart-count-badge hidden" aria-live="polite">0</span>
+                        </a>
+                    </div>
+                    <div class="luxury-lang-dropdown desktop-lang-dropdown yt-lang-dropdown" role="region" aria-label="قائمة اختيار اللغة">
+                        <div class="lld-trigger">
+                            <i class="fas fa-globe lld-globe"></i>
+                            <span class="lld-current-lang">العربية</span>
+                            <i class="fas fa-chevron-down lld-arrow"></i>
+                        </div>
+                        <div class="lld-menu">
+                            <div class="lld-item active" data-lang="ar">
+                                <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                            <div class="lld-item" data-lang="en">
+                                <span><span class="flag-icon">🇬🇧</span> English</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="product-details-page">
+        <div class="container">
+            <div id="productLoading" class="loader-gold" style="margin: 100px auto;"></div>
+
+            <div id="productContent" class="product-main-grid" style="display: none;">
+                <!-- Product Gallery -->
+                <div class="product-gallery reveal">
+                    <div class="main-image-box" onclick="openImageLightbox()">
+                        <img id="mainProductImg" src="" alt="Product" style="cursor: zoom-in;">
+                        <div class="zoom-hint"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div id="imageThumbs" class="thumb-strip"></div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-box reveal">
+                    <div class="pd-header-meta">
+                        <div class="pd-breadcrumb">
+                            <a href="index.html" class="bc-link">الرئيسية</a>
+                            <span class="bc-sep">/</span>
+                            <a href="menu.html" class="bc-link">قائمة الطعام</a>
+                            <span class="bc-sep">/</span>
+                            <a id="pdCategoryLink" href="#" class="bc-link active">
+                                <span id="pdCategory"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pd-rating-highlight" id="pdRatingDisplay" style="display: none;">
+                        <div class="stars-container" id="avgStars">
+                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <span id="avgRatingValue">(0.0)</span>
+                    </div>
+
+                    <div class="pd-main-header">
+                        <h1 id="productTitle" class="pd-title"></h1>
+                        <div class="pd-price-wrapper">
+                            <span id="pdCurrentPrice" class="pd-current-price"></span>
+                            <span id="pdOldPrice" class="pd-old-price"></span>
+                        </div>
+                    </div>
+
+                    <p id="productDesc" class="pd-description"></p>
+
+                    <!-- Variants (Sizes) -->
+                    <div id="pdVariants" class="pd-variants-section" style="display:none;">
+                        <h3 class="pd-sub-title"><i class="fas fa-sliders-h" style="color: var(--primary-color); margin-left: 8px;"></i><span data-ar="الخيارات المتاحة:" data-en="Available Options:">الخيارات المتاحة:</span></h3>
+                        <div id="variantPills" class="pd-pills"></div>
+                    </div>
+
+                    <!-- Quantity & Action -->
+                    <div class="pd-actions">
+                        <div class="pd-qty-box">
+                            <button onclick="changePDQty(1)"><i class="fas fa-plus"></i></button>
+                            <input type="number" id="pdQty" aria-label="الكمية المطلوبة" value="1" min="1">
+                            <button onclick="changePDQty(-1)"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <button id="pdAddToCartBtn" class="pd-btn-main">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span data-ar="إضافة إلى السلة" data-en="Add to Cart">إضافة إلى السلة</span>
+                        </button>
+                        <a id="pdWhatsAppBtn" href="#" target="_blank" class="pd-btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب عبر واتساب" data-en="Order via WhatsApp">اطلب عبر واتساب</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges Section -->
+                    <div class="pd-trust-box reveal">
+                        <h4 class="trust-title" data-ar="تجربة استثنائية مضمونة" data-en="Guaranteed Premium Experience">تجربة استثنائية مضمونة</h4>
+                        <div class="trust-grid">
+                            <div class="trust-item"><i class="fas fa-crown"></i><span data-ar="جودة ملكية فاخرة" data-en="Royal Premium Quality">جودة ملكية فاخرة</span></div>
+                            <div class="trust-item"><i class="fas fa-shield-alt"></i><span data-ar="تغليف حراري محكم" data-en="Insulated Thermal Packaging">تغليف حراري محكم</span></div>
+                            <div class="trust-item"><i class="fas fa-truck-loading"></i><span data-ar="توصيل سريع وآمن" data-en="Fast & Secure Delivery">توصيل سريع وآمن</span></div>
+                            <div class="trust-item"><i class="fas fa-leaf"></i><span data-ar="مكونات طازجة يومياً" data-en="Fresh Daily Ingredients">مكونات طازجة يومياً</span></div>
+                        </div>
+                    </div>
+
+                    <div class="pd-secondary-actions">
+                        <button id="pdWishlistBtn" class="pd-btn-outline"><i class="far fa-heart"></i><span data-ar="إضافة للمفضلة" data-en="Add to Wishlist">إضافة للمفضلة</span></button>
+                        <button class="pd-btn-outline" onclick="shareProduct()"><i class="fas fa-share-alt"></i><span data-ar="مشاركة" data-en="Share">مشاركة</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <section class="related-products-section reveal">
+                <div class="section-header-mini">
+                    <h2>قد يعجبك <span>أيضاً</span></h2>
+                    <div class="line-gold"></div>
+                </div>
+                <div id="relatedGrid" class="menu-grid"></div>
+            </section>
+
+            <!-- Random Discover -->
+            <section class="random-discover-section reveal" style="margin-top: 80px;">
+                <div class="section-header-mini">
+                    <h2>اكتشف <span>المزيد</span></h2>
+                    <p>أصناف مختارة بعناية لتجربتها</p>
+                    <div class="line-gold"></div>
+                </div>
+                <div id="randomGrid" class="menu-grid"></div>
+            </section>
+
+            <!-- Reviews Section -->
+            <section class="product-reviews-section reveal" style="padding-bottom: 80px;">
+                <div class="section-header-mini">
+                    <h2>آراء <span>العملاء</span></h2>
+                    <div class="line-gold"></div>
+                </div>
+                <div class="reviews-container">
+                    <div id="reviewsList" class="reviews-list">
+                        <div id="noReviews" class="no-reviews-box">
+                            <i class="far fa-comments no-reviews-icon"></i>
+                            <h3 data-ar="لا توجد تقييمات لهذا المنتج بعد" data-en="No reviews for this product yet">لا توجد تقييمات لهذا المنتج بعد</h3>
+                            <p data-ar="كن أول من يشارك رأيه وتجربته لهذا الصنف المميز!" data-en="Be the first to review this featured item!">كن أول من يشارك رأيه وتجربته لهذا الصنف المميز!</p>
+                        </div>
+                    </div>
+                    <div id="reviewFormContainer" class="add-review-box">
+                        <h3 data-ar="شاركنا رأيك وتجربتك:" data-en="Share Your Feedback:">شاركنا رأيك وتجربتك:</h3>
+                        <form id="reviewForm" class="review-form">
+                            <div class="rating-input">
+                                <span class="rating-label" data-ar="أضف تقييمك للصنف:" data-en="Select Rating:">أضف تقييمك للصنف:</span>
+                                <div class="star-rating">
+                                    <input type="radio" name="rating" value="5" id="star5"><label for="star5"></label>
+                                    <input type="radio" name="rating" value="4" id="star4"><label for="star4"></label>
+                                    <input type="radio" name="rating" value="3" id="star3"><label for="star3"></label>
+                                    <input type="radio" name="rating" value="2" id="star2"><label for="star2"></label>
+                                    <input type="radio" name="rating" value="1" id="star1"><label for="star1"></label>
+                                </div>
+                            </div>
+                            <input type="text" id="reviewerName" aria-label="اسم كاتب التقييم" placeholder="اسمك الكريم" data-ar="اسمك الكريم" data-en="Your Full Name" required>
+                            <textarea id="reviewComment" aria-label="نص التقييم والملاحظات" rows="4" placeholder="اكتب رأيك في هذا الصنف هنا..." data-ar="اكتب رأيك في هذا الصنف هنا..." data-en="Write your review for this item..." required></textarea>
+                            <button type="submit" id="submitReviewBtn" class="pd-btn-main" style="padding: 15px;" data-ar="إرسال التقييم" data-en="Submit Review">إرسال التقييم</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="imageLightbox" class="pd-lightbox" onclick="closeImageLightbox()">
+        <button class="lb-arrow prev" onclick="event.stopPropagation(); changeLightboxImage(-1)"><i class="fas fa-chevron-right"></i></button>
+        <img id="lightboxImg" src="" alt="Full View" onclick="closeImageLightbox()">
+        <button class="lb-arrow next" onclick="event.stopPropagation(); changeLightboxImage(1)"><i class="fas fa-chevron-left"></i></button>
+    </div>
+
+    <!-- Main Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer Top: Newsletter -->
+            <div class="footer-top-area reveal">
+                <div class="footer-about-newsletter">
+                    <a href="index.html" class="logo">
+                        <img src="logo.png" alt="Logo" class="logo-img">
+                        <span class="logo-text">WebMakers</span>
+                    </a>
+                    <p style="color: #aaa; max-width: 500px;" data-ar="نحن نؤمن بأن الطعام هو لغة تواصل عالمية، لذا نسعى لتقديم تجربة تذوق تجمع بين الفن والفخامة في كل طبق نقدمه." data-en="We believe food is a universal language, so we strive to offer a tasting experience that blends art and luxury in every dish we serve.">نحن نؤمن بأن الطعام هو لغة تواصل عالمية، لذا نسعى لتقديم تجربة تذوق تجمع بين الفن والفخامة في كل طبق نقدمه.</p>
+                </div>
+                <div class="newsletter-box">
+                    <h3 data-ar="انضم إلى قائمة الـ VIP" data-en="Join the VIP List">انضم إلى قائمة الـ VIP</h3>
+                    <p data-ar="كن أول من يعرف عن عروضنا الحصرية وأطباقنا الجديدة." data-en="Be the first to know about our exclusive offers and new dishes.">كن أول من يعرف عن عروضنا الحصرية وأطباقنا الجديدة.</p>
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <!-- Invisible Honeypot Trap for Bot Protection -->
+                        <div style="display: none !important; opacity: 0; position: absolute; left: -9999px;" aria-hidden="true">
+                            <input type="text" name="website_hp_check" class="hp-security-check" tabindex="-1" autocomplete="off">
+                        </div>
+                        <input type="email" placeholder="بريدك الإلكتروني" data-ar="بريدك الإلكتروني" data-en="Your Email" required>
+                        <button type="submit" class="btn-subscribe" data-ar="اشترك الآن" data-en="Subscribe Now">اشترك الآن <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div id="newsletterSuccess" style="display:none; color: var(--primary-color); margin-top: 15px; font-weight: bold;" data-ar="شكراً لانضمامك إلينا!" data-en="Thank you for joining us!">
+                        <i class="fas fa-check-circle"></i> شكراً لانضمامك إلينا!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Grid -->
+            <div class="footer-grid">
+                <!-- Column 1: Links -->
+                <div class="footer-col reveal">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-ar="الرئيسية" data-en="Home"><i class="fas fa-house"></i> الرئيسية</a></li>
+                        <li><a href="menu.html" data-ar="المنيو العالمي" data-en="Global Menu"><i class="fas fa-utensils"></i> المنيو العالمي</a></li>
+                        <li><a href="about.html" data-ar="قصة نجاحنا" data-en="Our Success Story"><i class="fas fa-circle-info"></i> قصة نجاحنا</a></li>
+                        <li><a href="cart.html" data-ar="سلة المشتريات" data-en="Shopping Cart"><i class="fas fa-shopping-basket"></i> سلة المشتريات</a></li>
+                        <li><a href="wishlist.html" data-ar="القائمة المفضلة" data-en="Wishlist"><i class="fas fa-heart"></i> القائمة المفضلة</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Working Hours -->
+                <div class="footer-col reveal" style="transition-delay: 0.1s;">
+                    <h4 data-ar="ساعات العمل" data-en="Working Hours">ساعات العمل</h4>
+                    <div class="working-hours-card">
+                        <div class="hour-item">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div class="hour-details">
+                                <span class="day" data-ar="الأحد - الخميس" data-en="Sunday - Thursday">الأحد - الخميس</span>
+                                <span class="time" data-ar="1:00 م - 1:00 ص" data-en="1:00 PM - 1:00 AM">1:00 م - 1:00 ص</span>
+                            </div>
+                        </div>
+                        <div class="hour-item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <div class="hour-details">
+                                <span class="day" data-ar="الجمعة - السبت" data-en="Friday - Saturday">الجمعة - السبت</span>
+                                <span class="time" data-ar="2:00 م - 2:00 ص" data-en="2:00 PM - 2:00 AM">2:00 م - 2:00 ص</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-icons-v2">
+                        <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/96700000000" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col reveal" style="transition-delay: 0.2s;">
+                    <h4 data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</h4>
+                    <ul class="contact-info-list">
+                        <li>
+                            <a href="https://maps.google.com" target="_blank">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span data-ar="صنعاء، الحي السياسي، شارع بغداد" data-en="Baghdad St, Political District, Sana'a">صنعاء، الحي السياسي، شارع بغداد</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+967777777777">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span dir="ltr"><span class="country-code">+967</span> 777 777 777</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+9671444444">
+                                <i class="fa-solid fa-phone"></i>
+                                <span dir="ltr"><span class="country-code">+967</span> 1 444 444</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:vip@webmakers-ye.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>vip@webmakers-ye.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-ar="خدمة العملاء" data-en="Customer Service">خدمة العملاء</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Mobile Only Column: Important Links -->
+                <div class="footer-col reveal mobile-only-important-col" style="transition-delay: 0.3s;">
+                    <h4 data-ar="روابط تهمك" data-en="Important Links">روابط تهمك</h4>
+                    <ul class="contact-info-list">
+                        <li>
+                            <a href="privacy-policy.html">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="careers.html">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span data-ar="الوظائف" data-en="Careers">الوظائف</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span data-ar="الأسئلة الشائعة" data-en="FAQs">الأسئلة الشائعة</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="luxury-lang-dropdown">
+                                <div class="lld-trigger">
+                                    <i class="fas fa-globe lld-globe"></i>
+                                    <span class="lld-current-lang">العربية</span>
+                                    <i class="fas fa-chevron-down lld-arrow"></i>
+                                </div>
+                                <div class="lld-menu">
+                                    <div class="lld-item active" data-lang="ar">
+                                        <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                        <i class="fas fa-check lld-check"></i>
+                                    </div>
+                                    <div class="lld-item" data-lang="en">
+                                        <span><span class="flag-icon">🇬🇧</span> English</span>
+                                        <i class="fas fa-check lld-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="copyright-v2" data-ar="&copy; 2026 جميع الحقوق محفوظة لـ <b>WebMakers Luxury Restaurant</b>" data-en="&copy; 2026 All Rights Reserved to <b>WebMakers Luxury Restaurant</b>">
+                    &copy; 2026 جميع الحقوق محفوظة لـ <b>WebMakers Luxury Restaurant</b>
+                </div>
+
+                <!-- Desktop Bottom Links (Visible ONLY on Desktop/Laptop) -->
+                <div class="footer-bottom-links desktop-bottom-links">
+                    <div class="luxury-lang-dropdown">
+                        <div class="lld-trigger">
+                            <i class="fas fa-globe lld-globe"></i>
+                            <span class="lld-current-lang">العربية</span>
+                            <i class="fas fa-chevron-down lld-arrow"></i>
+                        </div>
+                        <div class="lld-menu">
+                            <div class="lld-item active" data-lang="ar">
+                                <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                            <div class="lld-item" data-lang="en">
+                                <span><span class="flag-icon">🇬🇧</span> English</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="privacy-policy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy"><i class="fa-solid fa-shield-halved"></i> سياسة الخصوصية</a>
+                    <a href="careers.html" data-ar="الوظائف" data-en="Careers"><i class="fa-solid fa-briefcase"></i> الوظائف</a>
+                    <a href="faq.html" data-ar="الأسئلة الشائعة" data-en="FAQs"><i class="fa-solid fa-circle-question"></i> الأسئلة الشائعة</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.min.js?v=8.0"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const isAr = (localStorage.getItem('preferredLang') || 'ar') === 'ar';
+
+            if (!productId || !window._supabase) { window.location.href = 'menu.html'; return; }
+
+            // STEP 1: Single Lightning-Fast Query Join (Fetches Item, Category, Variants, and Gallery in 1 network trip!)
+            const { data: item, error } = await window._supabase
+                .from('menu_items')
+                .select('*, categories(*), item_variants(*), item_gallery(*)')
+                .eq('id', productId)
+                .single();
+
+            if (error || !item) { window.location.href = 'menu.html'; return; }
+
+            const loading = document.getElementById('productLoading');
+            const content = document.getElementById('productContent');
+            const mainImg = document.getElementById('mainProductImg');
+            const thumbStrip = document.getElementById('imageThumbs');
+            const title = document.getElementById('productTitle');
+            const priceOld = document.getElementById('pdOldPrice');
+            const priceCurrent = document.getElementById('pdCurrentPrice');
+            const desc = document.getElementById('productDesc');
+            const variantsSection = document.getElementById('pdVariants');
+            const variantPills = document.getElementById('variantPills');
+            const qtyInput = document.getElementById('pdQty');
+            const addToCartBtn = document.getElementById('pdAddToCartBtn');
+            const whatsappBtn = document.getElementById('pdWhatsAppBtn');
+            const wishlistBtn = document.getElementById('pdWishlistBtn');
+            const categoryTag = document.getElementById('pdCategory');
+            const categoryLink = document.getElementById('pdCategoryLink');
+
+            const cat = item.categories;
+            const variants = item.item_variants || [];
+            const gallery = item.item_gallery || [];
+
+            if (cat) {
+                categoryTag.innerText = isAr ? cat.name_ar : cat.name_en;
+                categoryLink.href = `menu.html?category=${cat.slug}`;
+            }
+
+            document.title = `${isAr ? item.name_ar : item.name_en} | WebMakers`;
+            mainImg.src = item.image_url;
+            title.innerText = isAr ? item.name_ar : item.name_en;
+            desc.innerText = isAr ? item.description_ar : item.description_en;
+
+            const whatsappMsg = encodeURIComponent(isAr ? 'أريد طلب: ' : 'I want to order: ') + encodeURIComponent(isAr ? item.name_ar : item.name_en);
+            whatsappBtn.href = `https://wa.me/${window.siteSettings ? window.siteSettings.whatsapp_number : ''}?text=${whatsappMsg}`;
+
+            let currentPrice = item.price;
+            let currentOldPrice = item.sale_price;
+            let selectedVariant = '';
+
+            const updateDisplayPrices = (p, op) => {
+                const currency = isAr ? (window.siteSettings?.currency_ar || 'ر.ي') : (window.siteSettings?.currency_en && window.siteSettings.currency_en !== 'ر.ي' ? window.siteSettings.currency_en : 'YER');
+                priceCurrent.innerText = `${p.toLocaleString()} ${currency}`;
+                if (op && op > p) { priceOld.innerText = `${op.toLocaleString()} ${currency}`; priceOld.style.display = 'block'; }
+                else { priceOld.style.display = 'none'; }
+            };
+            updateDisplayPrices(currentPrice, currentOldPrice);
+
+            if (variants && variants.length > 0) {
+                variantsSection.style.display = 'block';
+                selectedVariant = isAr ? variants[0].name_ar : variants[0].name_en;
+                updateDisplayPrices(variants[0].price, variants[0].sale_price);
+                currentPrice = variants[0].price; currentOldPrice = variants[0].sale_price;
+
+                variantPills.innerHTML = '';
+                variants.forEach((v, idx) => {
+                    const btn = document.createElement('button');
+                    btn.className = `size-pill ${idx === 0 ? 'active' : ''}`;
+                    btn.innerText = isAr ? v.name_ar : v.name_en;
+                    btn.onclick = () => {
+                        variantPills.querySelectorAll('.size-pill').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        selectedVariant = btn.innerText;
+                        updateDisplayPrices(v.price, v.sale_price);
+                        currentPrice = v.price; currentOldPrice = v.sale_price;
+                        updateCartBtnState();
+                    };
+                    variantPills.appendChild(btn);
+                });
+            }
+
+            // Image Gallery Setup
+            let allProductImages = [item.image_url];
+            if (gallery && gallery.length > 0) {
+                gallery.forEach(img => allProductImages.push(img.image_url));
+            }
+            thumbStrip.innerHTML = allProductImages.map((img, idx) => `<div class="thumb-item ${idx === 0 ? 'active' : ''}" onclick="setMainImage('${img}', ${idx})"><img src="${img}"></div>`).join('');
+
+            function updateCartBtnState() {
+                const cart = JSON.parse(localStorage.getItem('webm_cart')) || [];
+                const alreadyIn = cart.some(i => i.id === item.id && i.variant === selectedVariant);
+                if (alreadyIn) {
+                    addToCartBtn.classList.add('added');
+                    addToCartBtn.innerHTML = `<span class="custom-check-icon"><i class="fas fa-circle circle-bg"></i><i class="fas fa-check check-mark"></i></span> ${isAr ? 'مضاف للسلة (إلغاء؟)' : 'In Cart (Remove?)'}`;
+                    addToCartBtn.style.background = 'var(--primary-color)';
+                } else {
+                    addToCartBtn.classList.remove('added');
+                    addToCartBtn.innerHTML = `<i class="fas fa-shopping-basket"></i> ${isAr ? 'إضافة إلى السلة' : 'Add to Cart'}`;
+                    addToCartBtn.style.background = 'var(--gold-gradient)';
+                }
+            }
+
+            window.changePDQty = (delta) => {
+                let val = parseInt(qtyInput.value) + delta;
+                if (val < 1) val = 1;
+                qtyInput.value = val;
+            };
+
+            addToCartBtn.onclick = () => {
+                let cart = JSON.parse(localStorage.getItem('webm_cart')) || [];
+                const existingIdx = cart.findIndex(i => i.id === item.id && i.variant === selectedVariant);
+                if (existingIdx > -1) {
+                    cart.splice(existingIdx, 1);
+                    window.showToast(isAr ? 'تمت الإزالة من السلة' : 'Removed from Cart', 'info');
+                } else {
+                    cart.push({
+                        id: item.id, name: isAr ? item.name_ar : item.name_en, price: currentPrice,
+                        oldPrice: (currentOldPrice && currentOldPrice > currentPrice) ? currentOldPrice : null,
+                        variant: selectedVariant, image: item.image_url, quantity: parseInt(qtyInput.value)
+                    });
+                    window.showToast(isAr ? 'تمت الإضافة للسلة' : 'Added to Cart', 'success');
+                }
+                localStorage.setItem('webm_cart', JSON.stringify(cart));
+                window.updateNavBadges();
+                updateCartBtnState();
+            };
+
+            wishlistBtn.onclick = () => {
+                toggleWishlist(item.id, wishlistBtn);
+                const wishlist = JSON.parse(localStorage.getItem('webm_wishlist')) || [];
+                const isSaved = wishlist.includes(item.id);
+                wishlistBtn.querySelector('i').className = isSaved ? 'fas fa-heart' : 'far fa-heart';
+                wishlistBtn.style.color = isSaved ? 'var(--primary-color)' : '#fff';
+            };
+
+            window.shareProduct = () => {
+                if (navigator.share) navigator.share({ title: document.title, url: window.location.href });
+                else { window.showToast(isAr ? 'تم نسخ الرابط' : 'Link copied', 'success'); navigator.clipboard.writeText(window.location.href); }
+            };
+
+            // RENDER MAIN PRODUCT UI IMMEDIATELY (0.05s)
+            if (loading) loading.style.display = 'none';
+            if (content) content.style.display = 'grid';
+            updateCartBtnState();
+
+            const wishlist = JSON.parse(localStorage.getItem('webm_wishlist')) || [];
+            if (wishlist.includes(item.id)) {
+                wishlistBtn.querySelector('i').className = 'fas fa-heart';
+                wishlistBtn.style.color = 'var(--primary-color)';
+            }
+
+            // INSTANT PRELOADER FADE OUT
+            const preloader = document.getElementById('pagePreloader');
+            if (preloader) preloader.classList.add('fade-out');
+
+            // NON-BLOCKING LAZY BACKGROUND FETCH FOR REVIEWS & RELATED DISHES
+            const fetchRelated = async () => {
+                const { data: related } = await window._supabase.from('menu_items').select('*').eq('category_id', item.category_id).neq('id', item.id).limit(4);
+                if (related && related.length > 0) {
+                    const grid = document.getElementById('relatedGrid');
+                    const relIds = related.map(r => r.id);
+                    const { data: relVariants } = await window._supabase.from('item_variants').select('*').in('item_id', relIds);
+                    const { data: relReviews } = await window._supabase.from('product_reviews').select('product_id, rating').in('product_id', relIds).eq('is_approved', true);
+
+                    grid.innerHTML = related.map(r => {
+                        const itemReviews = (relReviews || []).filter(rev => rev.product_id === r.id);
+                        const avgRating = itemReviews.length > 0 ? itemReviews.reduce((a, b) => a + b.rating, 0) / itemReviews.length : 0;
+                        return createDishCardHTML(r, relVariants, isAr, { avg: avgRating, count: itemReviews.length });
+                    }).join('');
+                }
+            };
+
+            const fetchRandomDishes = async () => {
+                const { data: allItems } = await window._supabase.from('menu_items').select('*').eq('is_available', true).neq('id', productId);
+                if (allItems && allItems.length > 0) {
+                    const selected = allItems.sort(() => 0.5 - Math.random()).slice(0, 4);
+                    const selIds = selected.map(r => r.id);
+                    const { data: selVariants } = await window._supabase.from('item_variants').select('*').in('item_id', selIds);
+                    const { data: selReviews } = await window._supabase.from('product_reviews').select('product_id, rating').in('product_id', selIds).eq('is_approved', true);
+
+                    document.getElementById('randomGrid').innerHTML = selected.map(r => {
+                        const itemReviews = (selReviews || []).filter(rev => rev.product_id === r.id);
+                        const avgRating = itemReviews.length > 0 ? itemReviews.reduce((a, b) => a + b.rating, 0) / itemReviews.length : 0;
+                        return createDishCardHTML(r, selVariants, isAr, { avg: avgRating, count: itemReviews.length });
+                    }).join('');
+                }
+            };
+
+            const checkExistingReview = async () => {
+                const pendingReviews = JSON.parse(localStorage.getItem('pending_reviews')) || {};
+                if (pendingReviews[productId]) {
+                    const { name } = pendingReviews[productId];
+                    try {
+                        const { data: userRevs } = await window._supabase.from('product_reviews').select('id, is_approved').eq('product_id', productId).eq('user_name', name);
+
+                        if (!userRevs || userRevs.length === 0) {
+                            delete pendingReviews[productId];
+                            localStorage.setItem('pending_reviews', JSON.stringify(pendingReviews));
+                            return;
+                        }
+
+                        const isApproved = userRevs.some(r => r.is_approved === true);
+                        const formContainer = document.getElementById('reviewFormContainer');
+                        if (formContainer) {
+                            if (isApproved) {
+                                formContainer.innerHTML = `<div class="success-review-msg" style="text-align:center; padding: 20px;"><i class="fas fa-check-circle" style="color:#10b981; font-size: 3rem; margin-bottom: 20px;"></i><h3 style="color:#fff; margin-bottom: 15px;">${isAr ? 'شُكراً لك يا' : 'Thank you'} ${name}</h3><p style="color:#aaa; line-height:1.6;">${isAr ? 'تم اعتماد وتفعيل تقييمك لهذا الصنف بنجاح ويظهر للجميع الآن ✨' : 'Your review has been approved and is now visible to everyone ✨'}</p></div>`;
+                            } else {
+                                formContainer.innerHTML = `<div class="success-review-msg" style="text-align:center; padding: 20px;"><i class="fas fa-clock" style="color:var(--primary-color, #0284c7); font-size: 3rem; margin-bottom: 20px;"></i><h3 style="color:#fff; margin-bottom: 15px;">${isAr ? 'أهلاً بك يا' : 'Welcome'} ${name}</h3><p style="color:#aaa; line-height:1.6;">${isAr ? 'تقييمك لهذا الصنف قيد المراجعة حالياً من قبل الإدارة وسيظهر للجميع فور الموافقة عليه.' : 'Your review for this item is currently under review by administration.'}</p></div>`;
+                            }
+                        }
+                    } catch (e) {
+                        console.warn('Error checking user review status:', e);
+                    }
+                }
+            };
+
+            const fetchReviews = async () => {
+                const { data: reviews } = await window._supabase.from('product_reviews').select('*').eq('product_id', productId).eq('is_approved', true).order('created_at', { ascending: false });
+
+                const avgStarsContainer = document.getElementById('avgStars');
+                const avgValueText = document.getElementById('avgRatingValue');
+
+                const pendingReviews = JSON.parse(localStorage.getItem('pending_reviews')) || {};
+                if (pendingReviews[productId]) {
+                    const pendingName = pendingReviews[productId].name;
+                    const matchedApproved = reviews && reviews.some(r => r.user_name === pendingName);
+                    if (matchedApproved) {
+                        delete pendingReviews[productId];
+                        localStorage.setItem('pending_reviews', JSON.stringify(pendingReviews));
+                        const formContainer = document.getElementById('reviewFormContainer');
+                        if (formContainer) {
+                            formContainer.innerHTML = `<div class="success-review-msg" style="text-align:center; padding: 20px;"><i class="fas fa-check-circle" style="color:#10b981; font-size: 3rem; margin-bottom: 20px;"></i><h3 style="color:#fff; margin-bottom: 15px;">${isAr ? 'شُكراً لك يا' : 'Thank you'} ${pendingName}</h3><p style="color:#aaa; line-height:1.6;">${isAr ? 'تم اعتماد وتفعيل تقييمك لهذا الصنف بنجاح ويظهر للجميع الآن ✨' : 'Your review has been approved and is now visible to everyone ✨'}</p></div>`;
+                        }
+                    }
+                }
+
+                if (reviews && reviews.length > 0) {
+                    const totalRating = reviews.reduce((acc, curr) => acc + curr.rating, 0);
+                    const avg = (totalRating / reviews.length).toFixed(1);
+                    avgValueText.innerText = `(${avg})`;
+
+                    let starsHtml = '';
+                    for (let i = 1; i <= 5; i++) {
+                        if (i <= Math.floor(avg)) starsHtml += '<i class="fas fa-star"></i>';
+                        else if (i === Math.ceil(avg) && avg % 1 !== 0) starsHtml += '<i class="fas fa-star-half-alt"></i>';
+                        else starsHtml += '<i class="far fa-star"></i>';
+                    }
+                    avgStarsContainer.innerHTML = starsHtml;
+                    const ratingDisplay = document.getElementById('pdRatingDisplay');
+                    if (ratingDisplay) ratingDisplay.style.display = 'flex';
+                    document.getElementById('reviewsList').innerHTML = reviews.map(rev => `<div class="review-item"><div class="rev-header"><span class="rev-user">${rev.user_name}</span><div class="rev-stars">${'★'.repeat(rev.rating)}${'☆'.repeat(5-rev.rating)}</div></div><p class="rev-text">${rev.comment}</p><span class="rev-date">${new Date(rev.created_at).toLocaleDateString('ar-YE')}</span></div>`).join('');
+                } else {
+                    const ratingDisplay = document.getElementById('pdRatingDisplay');
+                    if (ratingDisplay) ratingDisplay.style.display = 'none';
+                }
+            };
+
+            document.getElementById('reviewForm').onsubmit = async (e) => {
+                e.preventDefault();
+                const name = document.getElementById('reviewerName').value;
+                const comment = document.getElementById('reviewComment').value;
+                const rating = document.querySelector('input[name="rating"]:checked')?.value;
+                if (!rating) { window.showToast(isAr ? 'يرجى اختيار التقييم' : 'Please select rating', 'error'); return; }
+                const { error } = await window._supabase.from('product_reviews').insert({ product_id: productId, user_name: name, comment: comment, rating: parseInt(rating), is_approved: false });
+                if (!error) {
+                    const pendingReviews = JSON.parse(localStorage.getItem('pending_reviews')) || {};
+                    pendingReviews[productId] = { name: name, timestamp: Date.now() };
+                    localStorage.setItem('pending_reviews', JSON.stringify(pendingReviews));
+                    window.showToast(isAr ? 'تم الإرسال بنجاح' : 'Sent successfully', 'success');
+                    location.reload();
+                }
+            };
+
+            let currentGalleryIdx = 0;
+            window.setMainImage = (url, idx) => {
+                const mainImg = document.getElementById('mainProductImg');
+                mainImg.style.opacity = '0';
+                setTimeout(() => { mainImg.src = url; mainImg.style.opacity = '1'; currentGalleryIdx = idx; document.querySelectorAll('.thumb-item').forEach((t, i) => t.classList.toggle('active', i === idx)); }, 300);
+            };
+
+            window.openImageLightbox = () => {
+                const lb = document.getElementById('imageLightbox');
+                document.getElementById('lightboxImg').src = allProductImages[currentGalleryIdx];
+                lb.classList.add('active'); document.body.style.overflow = 'hidden';
+            };
+            window.changeLightboxImage = (delta) => {
+                currentGalleryIdx += delta;
+                if (currentGalleryIdx >= allProductImages.length) currentGalleryIdx = 0;
+                if (currentGalleryIdx < 0) currentGalleryIdx = allProductImages.length - 1;
+                document.getElementById('lightboxImg').src = allProductImages[currentGalleryIdx];
+            };
+            window.closeImageLightbox = () => { document.getElementById('imageLightbox').classList.remove('active'); document.body.style.overflow = 'auto'; };
+
+            // Trigger Non-Blocking Background Fetches
+            fetchRelated();
+            fetchRandomDishes();
+            fetchReviews();
+            checkExistingReview();
+        });
+    </script>
+</body>
+</html>

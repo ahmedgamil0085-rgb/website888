@@ -1,0 +1,8 @@
+{
+  "name": "متجر ويب ميكرز الإلكتروني | WebMakers Store",
+  "description": "متجر ويب ميكرز للتسوق الإلكتروني - منتجات فاخرة، عروض حصرية، وإلكترونيات بجودة عالية.",
+  "requestFrame": "NONE",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

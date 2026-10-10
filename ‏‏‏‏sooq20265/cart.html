@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>سلة المشتريات | WebMakers</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=El+Messiri:wght@700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- Supabase JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="theme.min.css?v=8.0">
+    <link rel="stylesheet" href="style.min.css?v=8.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <!-- Masterpiece Page Preloader -->
+    <div id="pagePreloader" class="page-preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo-wrapper">
+                <img src="logo.png" alt="WebMakers Logo" class="preloader-logo">
+                <div class="preloader-glow-ring"></div>
+            </div>
+            <div class="preloader-brand">WebMakers</div>
+            <div class="preloader-text" data-ar="جاري تحضير تجربتك الملكية..." data-en="Preparing Your Royal Experience...">جاري تحضير تجربتك الملكية...</div>
+            <div class="preloader-bar-wrapper">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Master Header Section -->
+    <header role="banner">
+        <nav class="yt-header-nav container" role="navigation" aria-label="القائمة الرئيسية للموقع">
+            <!-- 1. Right Section: Hamburger Menu + Logo & SaaS Badge -->
+            <div class="yt-nav-right">
+                <button class="mobile-nav-toggle" id="mobileNavToggle" title="القائمة / Menu" aria-label="فتح القائمة الجانبية">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <a href="index.html" class="logo" aria-label="مطعم ويب ميكرز الفاخر - الرئيسية">
+                    <img src="logo.png" alt="شعار مطعم ويب ميكرز الفاخر" class="logo-img">
+                    <span class="logo-text">WebMakers</span>
+                    <span class="yt-saas-badge">SA</span>
+                </a>
+            </div>
+
+            <!-- 2. Center Section: YouTube-Style Search Bar -->
+            <div class="yt-nav-center">
+                <div class="yt-search-form nav-search-trigger" role="button" aria-label="بحث ذكي AI">
+                    <span class="yt-search-mobile-label yt-search-label" data-ar="بحث ذكي AI ✨" data-en="AI Search ✨">بحث ذكي AI ✨</span>
+                    <button class="yt-search-btn nav-search-trigger" type="button" title="بحث بالذكاء الاصطناعي / AI Search" aria-label="بحث بالذكاء الاصطناعي">
+                        <svg class="ai-search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="10" cy="10" r="5.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.5 14.5L19.5 19.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                            <path d="M16.5 1.5C16.5 3.8 15.2 4.8 13.5 5C15.2 5.2 16.5 6.2 16.5 8.5C16.5 6.2 17.8 5.2 19.5 5C17.8 4.8 16.5 3.8 16.5 1.5Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3. Left Section: Actions -->
+            <div class="yt-nav-left">
+                <div class="nav-actions-luxury yt-actions" role="toolbar" aria-label="أدوات التحكم السريع">
+                    <div class="header-cart-wishlist-capsule" role="group" aria-label="المفضلة وسلة المشتريات">
+                        <a href="wishlist.html" class="nav-badge-wrapper" title="المفضلة / Wishlist" aria-label="عرض قائمة المأكولات المفضلة">
+                            <i class="far fa-heart" aria-hidden="true"></i>
+                            <span class="nav-badge wishlist-count-badge hidden" aria-live="polite">0</span>
+                        </a>
+                        <span class="capsule-divider" aria-hidden="true"></span>
+                        <a href="cart.html" class="nav-badge-wrapper" title="السلة / Cart" aria-label="عرض سلة المشتريات">
+                            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="nav-badge cart-count-badge hidden" aria-live="polite">0</span>
+                        </a>
+                    </div>
+                    <div class="luxury-lang-dropdown desktop-lang-dropdown yt-lang-dropdown" role="region" aria-label="قائمة اختيار اللغة">
+                        <div class="lld-trigger">
+                            <i class="fas fa-globe lld-globe"></i>
+                            <span class="lld-current-lang">العربية</span>
+                            <i class="fas fa-chevron-down lld-arrow"></i>
+                        </div>
+                        <div class="lld-menu">
+                            <div class="lld-item active" data-lang="ar">
+                                <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                            <div class="lld-item" data-lang="en">
+                                <span><span class="flag-icon">🇬🇧</span> English</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <!-- Cart Main Content -->
+    <section class="cart-luxury-container">
+        <div class="container">
+            <div class="section-title reveal">
+                <h1 data-ar="سلة المشتريات" data-en="Your Shopping Cart">سلة المشتريات</h1>
+                <div class="divider-gold"></div>
+            </div>
+
+            <div id="cartContent">
+                <!-- Content generated via JS -->
+                <div class="loader-gold" id="cartLoading"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer Top: Newsletter -->
+            <div class="footer-top-area reveal">
+                <div class="footer-about-newsletter">
+                    <a href="index.html" class="logo">
+                        <img src="logo.png" alt="Logo" class="logo-img">
+                        <span class="logo-text">WebMakers</span>
+                    </a>
+                    <p style="color: #aaa; max-width: 500px;" data-ar="نحن نؤمن بأن الطعام هو لغة تواصل عالمية، لذا نسعى لتقديم تجربة تذوق تجمع بين الفن والفخامة في كل طبق نقدمه." data-en="We believe food is a universal language, so we strive to offer a tasting experience that blends art and luxury in every dish we serve.">نحن نؤمن بأن الطعام هو لغة تواصل عالمية، لذا نسعى لتقديم تجربة تذوق تجمع بين الفن والفخامة في كل طبق نقدمه.</p>
+                </div>
+                <div class="newsletter-box">
+                    <h3 data-ar="انضم إلى قائمة الـ VIP" data-en="Join the VIP List">انضم إلى قائمة الـ VIP</h3>
+                    <p data-ar="كن أول من يعرف عن عروضنا الحصرية وأطباقنا الجديدة." data-en="Be the first to know about our exclusive offers and new dishes.">كن أول من يعرف عن عروضنا الحصرية وأطباقنا الجديدة.</p>
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <!-- Invisible Honeypot Trap for Bot Protection -->
+                        <div style="display: none !important; opacity: 0; position: absolute; left: -9999px;" aria-hidden="true">
+                            <input type="text" name="website_hp_check" class="hp-security-check" tabindex="-1" autocomplete="off">
+                        </div>
+                        <input type="email" placeholder="بريدك الإلكتروني" data-ar="بريدك الإلكتروني" data-en="Your Email" required>
+                        <button type="submit" class="btn-subscribe" data-ar="اشترك الآن" data-en="Subscribe Now">اشترك الآن <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div id="newsletterSuccess" style="display:none; color: var(--primary-color); margin-top: 15px; font-weight: bold;" data-ar="شكراً لانضمامك إلينا!" data-en="Thank you for joining us!">
+                        <i class="fas fa-check-circle"></i> شكراً لانضمامك إلينا!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Grid -->
+            <div class="footer-grid">
+                <!-- Column 1: Links -->
+                <div class="footer-col reveal">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-ar="الرئيسية" data-en="Home"><i class="fas fa-house"></i> الرئيسية</a></li>
+                        <li><a href="menu.html" data-ar="المنيو العالمي" data-en="Global Menu"><i class="fas fa-utensils"></i> المنيو العالمي</a></li>
+                        <li><a href="about.html" data-ar="قصة نجاحنا" data-en="Our Success Story"><i class="fas fa-circle-info"></i> قصة نجاحنا</a></li>
+                        <li><a href="cart.html" data-ar="سلة المشتريات" data-en="Shopping Cart"><i class="fas fa-shopping-basket"></i> سلة المشتريات</a></li>
+                        <li><a href="wishlist.html" data-ar="القائمة المفضلة" data-en="Wishlist"><i class="fas fa-heart"></i> القائمة المفضلة</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Working Hours -->
+                <div class="footer-col reveal" style="transition-delay: 0.1s;">
+                    <h4 data-ar="ساعات العمل" data-en="Working Hours">ساعات العمل</h4>
+                    <div class="working-hours-card">
+                        <div class="hour-item">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div class="hour-details">
+                                <span class="day" data-ar="الأحد - الخميس" data-en="Sunday - Thursday">الأحد - الخميس</span>
+                                <span class="time" data-ar="1:00 م - 1:00 ص" data-en="1:00 PM - 1:00 AM">1:00 م - 1:00 ص</span>
+                            </div>
+                        </div>
+                        <div class="hour-item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <div class="hour-details">
+                                <span class="day" data-ar="الجمعة - السبت" data-en="Friday - Saturday">الجمعة - السبت</span>
+                                <span class="time" data-ar="2:00 م - 2:00 ص" data-en="2:00 PM - 2:00 AM">2:00 م - 2:00 ص</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-icons-v2">
+                        <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/96700000000" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col reveal" style="transition-delay: 0.2s;">
+                    <h4 data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</h4>
+                    <ul class="contact-info-list">
+                        <li>
+                            <a href="https://maps.google.com" target="_blank">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span data-ar="صنعاء، الحي السياسي، شارع بغداد" data-en="Baghdad St, Political District, Sana'a">صنعاء، الحي السياسي، شارع بغداد</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+967777777777">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span dir="ltr"><span class="country-code">+967</span> 777 777 777</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+9671444444">
+                                <i class="fa-solid fa-phone"></i>
+                                <span dir="ltr"><span class="country-code">+967</span> 1 444 444</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:vip@webmakers-ye.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>vip@webmakers-ye.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-ar="خدمة العملاء" data-en="Customer Service">خدمة العملاء</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Mobile Only Column: Important Links -->
+                <div class="footer-col reveal mobile-only-important-col" style="transition-delay: 0.3s;">
+                    <h4 data-ar="روابط تهمك" data-en="Important Links">روابط تهمك</h4>
+                    <ul class="contact-info-list">
+                        <li>
+                            <a href="privacy-policy.html">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="careers.html">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span data-ar="الوظائف" data-en="Careers">الوظائف</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span data-ar="الأسئلة الشائعة" data-en="FAQs">الأسئلة الشائعة</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="luxury-lang-dropdown">
+                                <div class="lld-trigger">
+                                    <i class="fas fa-globe lld-globe"></i>
+                                    <span class="lld-current-lang">العربية</span>
+                                    <i class="fas fa-chevron-down lld-arrow"></i>
+                                </div>
+                                <div class="lld-menu">
+                                    <div class="lld-item active" data-lang="ar">
+                                        <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                        <i class="fas fa-check lld-check"></i>
+                                    </div>
+                                    <div class="lld-item" data-lang="en">
+                                        <span><span class="flag-icon">🇬🇧</span> English</span>
+                                        <i class="fas fa-check lld-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="copyright-v2" data-ar="&copy; 2026 جميع الحقوق محفوظة لـ <b>WebMakers Luxury Restaurant</b>" data-en="&copy; 2026 All Rights Reserved to <b>WebMakers Luxury Restaurant</b>">
+                    &copy; 2026 جميع الحقوق محفوظة لـ <b>WebMakers Luxury Restaurant</b>
+                </div>
+
+                <!-- Desktop Bottom Links (Visible ONLY on Desktop/Laptop) -->
+                <div class="footer-bottom-links desktop-bottom-links">
+                    <div class="luxury-lang-dropdown">
+                        <div class="lld-trigger">
+                            <i class="fas fa-globe lld-globe"></i>
+                            <span class="lld-current-lang">العربية</span>
+                            <i class="fas fa-chevron-down lld-arrow"></i>
+                        </div>
+                        <div class="lld-menu">
+                            <div class="lld-item active" data-lang="ar">
+                                <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                            <div class="lld-item" data-lang="en">
+                                <span><span class="flag-icon">🇬🇧</span> English</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="privacy-policy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy"><i class="fa-solid fa-shield-halved"></i> سياسة الخصوصية</a>
+                    <a href="careers.html" data-ar="الوظائف" data-en="Careers"><i class="fa-solid fa-briefcase"></i> الوظائف</a>
+                    <a href="faq.html" data-ar="الأسئلة الشائعة" data-en="FAQs"><i class="fa-solid fa-circle-question"></i> الأسئلة الشائعة</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.min.js?v=8.0"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const renderCart = () => {
+                const cart = JSON.parse(localStorage.getItem('webm_cart')) || [];
+                const container = document.getElementById('cartContent');
+                const isAr = (localStorage.getItem('preferredLang') || 'ar') === 'ar';
+
+                // حفظ موضع التمرير
+                const wrapper = document.querySelector('.cart-table-wrapper');
+                const savedScrollLeft = wrapper ? wrapper.scrollLeft : 0;
+
+                if (cart.length === 0) {
+                    container.innerHTML = `
+                        <div class="cart-empty-state reveal active">
+                            <i class="fas fa-shopping-basket"></i>
+                            <h2 data-ar="سلة المشتريات فارغة حالياً" data-en="Your cart is currently empty">${isAr ? 'سلة المشتريات فارغة حالياً' : 'Your cart is currently empty'}</h2>
+                            <p data-ar="استكشف قائمة أصنافنا الفاخرة وأضف أطباقك المفضلة." data-en="Explore our premium menu and add your favorite dishes.">${isAr ? 'استكشف قائمة أصنافنا الفاخرة وأضف أطباقك المفضلة.' : 'Explore our premium menu and add your favorite dishes.'}</p>
+                            <a href="menu.html" class="btn-gold-glow">${isAr ? 'العودة للمنيو' : 'Back to Menu'}</a>
+                        </div>
+                    `;
+                    return;
+                }
+
+                let total = 0;
+                let subtotalBeforeDiscount = 0;
+                const currency = isAr ? (window.siteSettings?.currency_ar || 'ر.ي') : (window.siteSettings?.currency_en && window.siteSettings.currency_en !== 'ر.ي' ? window.siteSettings.currency_en : 'YER');
+
+                let html = `
+                    <div class="cart-table-wrapper reveal active">
+                        <table class="cart-table" id="cartTable">
+                            <thead>
+                                <tr>
+                                    <th>${isAr ? 'المنتج' : 'Product'}</th>
+                                    <th>${isAr ? 'السعر' : 'Price'}</th>
+                                    <th>${isAr ? 'الكمية' : 'Quantity'}</th>
+                                    <th>${isAr ? 'المجموع' : 'Subtotal'}</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+
+                cart.forEach((item, index) => {
+                    const itemPrice = item.price || 0;
+                    const itemOldPrice = item.oldPrice || null;
+                    const subtotal = itemPrice * item.quantity;
+                    const subtotalOld = (itemOldPrice || itemPrice) * item.quantity;
+
+                    total += subtotal;
+                    subtotalBeforeDiscount += subtotalOld;
+
+                    html += `
+                        <tr>
+                            <td>
+                                <div class="cart-item-info">
+                                    <a href="product.html?id=${item.id}" class="cart-product-link">
+                                        <img src="${item.image || 'logo.png'}" class="cart-item-img" onerror="this.src='logo.png'">
+                                    </a>
+                                    <div class="cart-item-details">
+                                        <a href="product.html?id=${item.id}" class="cart-product-link">
+                                            <h4>${item.name || (isAr ? 'صنف فاخر' : 'Premium Item')}</h4>
+                                        </a>
+                                        ${item.variant ? `<span class="cart-item-variant" style="background: var(--primary-color); color: #000; padding: 2px 10px; border-radius: 10px; font-size: 0.8rem; font-weight: bold; margin-top: 5px; display: inline-block;">${item.variant}</span>` : ''}
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-label="${isAr ? 'السعر' : 'Price'}">
+                                <div class="cart-price-group">
+                                    ${itemOldPrice ? `<span class="cart-price-old">${itemOldPrice.toLocaleString()} ${currency}</span>` : ''}
+                                    <span class="cart-price-new">${itemPrice.toLocaleString()} ${currency}</span>
+                                </div>
+                            </td>
+                            <td data-label="${isAr ? 'الكمية' : 'Quantity'}">
+                                <div class="qty-controls">
+                                    <button class="qty-btn" onclick="updateQty(${index}, 1)"><i class="fas fa-plus"></i></button>
+                                    <input type="text" class="qty-input" value="${item.quantity}" oninput="this.value = this.value.replace(/[^0-9]/g, '')" onchange="manualUpdateQty(${index}, this.value)" lang="en">
+                                    <button class="qty-btn" onclick="updateQty(${index}, -1)"><i class="fas fa-minus"></i></button>
+                                </div>
+                            </td>
+                            <td data-label="${isAr ? 'المجموع' : 'Subtotal'}" class="cart-price-new">${subtotal.toLocaleString()} ${currency}</td>
+                            <td>
+                                <button class="remove-item-btn" onclick="removeItem(${index})"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                    `;
+                });
+
+                const activeCoupon = JSON.parse(sessionStorage.getItem('active_coupon'));
+                let couponDiscountValue = 0;
+                let couponValDisplay = 0;
+                if (activeCoupon) {
+                    couponValDisplay = parseFloat(activeCoupon.discount_value ?? activeCoupon.value ?? activeCoupon.discount_percent ?? 0);
+                    if (activeCoupon.discount_type === 'percentage') {
+                        couponDiscountValue = total * (couponValDisplay / 100);
+                    } else {
+                        couponDiscountValue = couponValDisplay;
+                    }
+                }
+
+                const finalOrderAmount = Math.max(0, total - couponDiscountValue);
+                const totalSavingsAmount = (subtotalBeforeDiscount - total) + couponDiscountValue;
+
+                html += `
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="coupon-box reveal active">
+                        <label class="coupon-label">${isAr ? 'هل لديك كود خصم؟' : 'Have a promo code?'}</label>
+                        <div class="coupon-input-group">
+                            <input type="text" class="coupon-input" id="couponCode" value="${activeCoupon ? activeCoupon.code : ''}" placeholder="${isAr ? 'أدخل الرمز هنا' : 'Enter code here'}" ${activeCoupon ? 'disabled' : ''}>
+                            ${activeCoupon ? `<button class="btn-apply-coupon" style="background: #ff4757; color: #fff;" onclick="removeCoupon()">${isAr ? 'إلغاء' : 'Remove'}</button>` : `<button class="btn-apply-coupon" onclick="applyCoupon()">${isAr ? 'تطبيق' : 'Apply'}</button>`}
+                        </div>
+                        ${activeCoupon ? `<p style="color:var(--primary-color); margin-top:10px; font-size:0.9rem;">${isAr ? 'تم تطبيق خصم بقيمة' : 'Applied discount'}: ${couponValDisplay}${activeCoupon.discount_type === 'percentage' ? '%' : ' ' + currency}</p>` : ''}
+                    </div>
+
+                    <div class="cart-summary-luxury reveal active">
+                        <div class="summary-row"><span>${isAr ? 'المجموع قبل الخصم' : 'Subtotal'}</span><span class="val">${subtotalBeforeDiscount.toLocaleString()} ${currency}</span></div>
+                        ${totalSavingsAmount > 0 ? `<div class="summary-row savings"><span>${isAr ? 'التوفير الإجمالي' : 'Total Savings'}</span><span class="val">-${totalSavingsAmount.toLocaleString()} ${currency}</span></div>` : ''}
+                        <div class="summary-row total"><span>${isAr ? 'المجموع النهائي' : 'Grand Total'}</span><span class="val">${finalOrderAmount.toLocaleString()} ${currency}</span></div>
+                        <button class="btn-primary-glow" style="width:100%; margin-top:30px; border:none; cursor:pointer;" onclick="checkoutWhatsApp()"><i class="fab fa-whatsapp"></i> ${isAr ? 'إرسال الطلب عبر واتساب' : 'Checkout via WhatsApp'}</button>
+                    </div>
+                `;
+
+                container.innerHTML = html;
+
+                const newWrapper = container.querySelector('.cart-table-wrapper');
+                if (newWrapper) {
+                    newWrapper.scrollLeft = savedScrollLeft;
+                }
+            };
+
+            window.applyCoupon = async () => {
+                const input = document.getElementById('couponCode');
+                const code = (input ? input.value : '').trim().toUpperCase();
+                const isAr = (localStorage.getItem('preferredLang') || 'ar') === 'ar';
+
+                if (!code) {
+                    window.showToast(isAr ? 'يرجى إدخال كود خصم' : 'Please enter code', 'error');
+                    return;
+                }
+
+                try {
+                    let couponObj = null;
+
+                    if (window._supabase) {
+                        const { data, error } = await window._supabase
+                            .from('coupons')
+                            .select('*')
+                            .ilike('code', code)
+                            .eq('is_active', true);
+
+                        if (data && data.length > 0) {
+                            couponObj = data[0];
+                        }
+                    }
+
+                    if (!couponObj) {
+                        const localCoupons = JSON.parse(localStorage.getItem('local_coupons_data') || '[]');
+                        couponObj = localCoupons.find(c =>
+                            (c.code || '').trim().toUpperCase() === code &&
+                            (c.is_active === true || c.is_active === 'true' || c.is_active === 1)
+                        );
+                    }
+
+                    if (!couponObj) {
+                        window.showToast(isAr ? 'كود الخصم غير صالح أو معطل' : 'Invalid or expired promo code', 'error');
+                        return;
+                    }
+
+                    // Check Expiry Date
+                    const expiryStr = couponObj.expiry_date || couponObj.expires_at;
+                    if (expiryStr && expiryStr !== 'null' && expiryStr !== 'undefined' && String(expiryStr).trim() !== '') {
+                        const datePart = String(expiryStr).slice(0, 10);
+                        const expiryDate = new Date(datePart + 'T23:59:59');
+                        if (!isNaN(expiryDate.getTime()) && expiryDate < new Date()) {
+                            window.showToast(isAr ? 'عذراً، كود الخصم هذا منتهي الصلاحية' : 'Sorry, this promo code has expired', 'error');
+                            return;
+                        }
+                    }
+
+                    // 1. Check Usage Limit (max_uses vs usages_count)
+                    const currentUsages = parseInt(couponObj.usages_count || couponObj.used_count || 0, 10) || 0;
+                    const maxLimit = parseInt(couponObj.max_uses, 10) || null;
+                    if (maxLimit && currentUsages >= maxLimit) {
+                        window.showToast(isAr ? 'عذراً، وصل هذا الكوبون للحد الأقصى المسموح لاستخدامه' : 'Sorry, this coupon has reached its maximum usage limit', 'error');
+                        return;
+                    }
+
+                    // 2. Increment usage counter IMMEDIATELY when applied & saved!
+                    const newUsages = currentUsages + 1;
+                    couponObj.usages_count = newUsages;
+
+                    // Update in Supabase
+                    if (window._supabase) {
+                        try {
+                            if (couponObj.id) {
+                                await window._supabase.from('coupons').update({ usages_count: newUsages }).eq('id', couponObj.id);
+                            }
+                        } catch (e) {
+                            try {
+                                await window._supabase.from('coupons').update({ usages_count: newUsages }).eq('code', couponObj.code);
+                            } catch (err) {}
+                        }
+                    }
+
+                    // Update in LocalStorage
+                    try {
+                        let localCoupons = JSON.parse(localStorage.getItem('local_coupons_data') || '[]');
+                        let existingItem = localCoupons.find(c => String(c.id) === String(couponObj.id) || (c.code || '').trim().toUpperCase() === (couponObj.code || '').trim().toUpperCase());
+                        if (existingItem) {
+                            existingItem.usages_count = newUsages;
+                        } else {
+                            localCoupons.unshift(couponObj);
+                        }
+                        localStorage.setItem('local_coupons_data', JSON.stringify(localCoupons));
+                    } catch (err) {}
+
+                    couponObj.value = parseFloat(couponObj.discount_value ?? couponObj.discount_percent ?? couponObj.value ?? 0);
+                    couponObj.discount_value = couponObj.value;
+
+                    sessionStorage.setItem('active_coupon', JSON.stringify(couponObj));
+                    window.showToast(isAr ? '✨ تم تطبيق الخصم بنجاح!' : '✨ Discount applied!', 'success');
+                    renderCart();
+                } catch (e) {
+                    console.error('Apply coupon error:', e);
+                    window.showToast(isAr ? 'خطأ في التحقق من الكود' : 'Error checking code', 'error');
+                }
+            };
+
+            window.removeCoupon = async () => {
+                const activeCoupon = JSON.parse(sessionStorage.getItem('active_coupon'));
+                if (activeCoupon) {
+                    const currentUsages = parseInt(activeCoupon.usages_count || activeCoupon.used_count || 1, 10) || 1;
+                    const newUsages = Math.max(0, currentUsages - 1);
+
+                    if (window._supabase) {
+                        try {
+                            if (activeCoupon.id) {
+                                await window._supabase.from('coupons').update({ usages_count: newUsages }).eq('id', activeCoupon.id);
+                            }
+                        } catch (e) {
+                            try {
+                                await window._supabase.from('coupons').update({ usages_count: newUsages }).eq('code', activeCoupon.code);
+                            } catch (err) {}
+                        }
+                    }
+
+                    try {
+                        let localCoupons = JSON.parse(localStorage.getItem('local_coupons_data') || '[]');
+                        let existingItem = localCoupons.find(c => String(c.id) === String(activeCoupon.id) || (c.code || '').trim().toUpperCase() === (activeCoupon.code || '').trim().toUpperCase());
+                        if (existingItem) {
+                            existingItem.usages_count = newUsages;
+                            localStorage.setItem('local_coupons_data', JSON.stringify(localCoupons));
+                        }
+                    } catch (err) {}
+                }
+
+                sessionStorage.removeItem('active_coupon');
+                renderCart();
+            };
+
+            window.updateQty = (index, delta) => {
+                let cart = JSON.parse(localStorage.getItem('webm_cart')) || [];
+                if (!cart[index]) return;
+                cart[index].quantity += delta;
+                if (cart[index].quantity < 1) cart[index].quantity = 1;
+                localStorage.setItem('webm_cart', JSON.stringify(cart));
+                renderCart();
+                if (window.updateNavBadges) window.updateNavBadges();
+            };
+
+            window.manualUpdateQty = (index, value) => {
+                let cart = JSON.parse(localStorage.getItem('webm_cart')) || [];
+                if (!cart[index]) return;
+                let newQty = parseInt(value);
+                if (isNaN(newQty) || newQty < 1) newQty = 1;
+                cart[index].quantity = newQty;
+                localStorage.setItem('webm_cart', JSON.stringify(cart));
+                renderCart();
+                if (window.updateNavBadges) window.updateNavBadges();
+            };
+
+            window.removeItem = (index) => {
+                const rows = document.querySelectorAll('#cartTable tbody tr');
+                const rowToDelete = rows[index];
+
+                if (rowToDelete) {
+                    rowToDelete.style.transition = 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+                    rowToDelete.style.opacity = '0';
+                    rowToDelete.style.transform = 'scale(0.9) translateY(20px)';
+
+                    setTimeout(() => {
+                        let cart = JSON.parse(localStorage.getItem('webm_cart')) || [];
+                        if (!cart[index]) return;
+                        cart.splice(index, 1);
+                        localStorage.setItem('webm_cart', JSON.stringify(cart));
+                        renderCart();
+                        if (window.updateNavBadges) window.updateNavBadges();
+                    }, 500);
+                }
+            };
+
+            window.checkoutWhatsApp = () => {
+                const cart = JSON.parse(localStorage.getItem('webm_cart')) || [];
+                const activeCoupon = JSON.parse(sessionStorage.getItem('active_coupon'));
+                const isAr = (localStorage.getItem('preferredLang') || 'ar') === 'ar';
+
+                if (cart.length === 0) return;
+
+                let message = isAr ? '--- *طلب جديد من الموقع* ---\n\n' : '--- *New Order from Website* ---\n\n';
+                let subtotal = 0;
+
+                const baseUrl = window.location.origin + window.location.pathname.replace('cart.html', '');
+
+                cart.forEach((item, index) => {
+                    const itemTotal = item.price * item.quantity;
+                    subtotal += itemTotal;
+
+                    message += `*${index + 1}. ${item.name}* ${item.variant ? `(${item.variant})` : ''}\n`;
+                    message += `> ${isAr ? 'الكمية' : 'Qty'}: ${item.quantity}\n`;
+                    message += `> ${isAr ? 'السعر' : 'Price'}: ${item.price.toLocaleString()} ${isAr ? 'ر.ي' : 'YER'}\n`;
+                    message += `> ${isAr ? 'المجموع' : 'Subtotal'}: ${itemTotal.toLocaleString()} ${isAr ? 'ر.ي' : 'YER'}\n`;
+                    message += `> ${isAr ? 'الرابط' : 'Link'}: ${baseUrl}product.html?id=${item.id}\n`;
+
+                    if (item.image) {
+                        const imgFullUrl = item.image.startsWith('http') ? item.image : baseUrl + item.image;
+                        message += `> ${isAr ? 'الصورة' : 'Image'}: ${imgFullUrl}\n`;
+                    }
+
+                    message += `----------------------------\n`;
+                });
+
+                let finalTotal = subtotal;
+                if (activeCoupon) {
+                    let discount = (activeCoupon.discount_type === 'percentage') ? subtotal * (activeCoupon.value / 100) : activeCoupon.value;
+                    finalTotal = Math.max(0, subtotal - discount);
+                    message += `\n*${isAr ? 'المجموع قبل الخصم' : 'Subtotal'}*: ${subtotal.toLocaleString()} ${isAr ? 'ر.ي' : 'YER'}`;
+                    message += `\n*${isAr ? 'كود الخصم' : 'Coupon'}*: ${activeCoupon.code} (-${activeCoupon.value}${activeCoupon.discount_type === 'percentage' ? '%' : ' ' + (isAr ? 'ر.ي' : 'YER')})`;
+
+                    // Increment usages_count in Supabase & LocalStorage in real-time
+                    (async () => {
+                        const newUsage = (parseInt(activeCoupon.usages_count || activeCoupon.used_count || 0, 10) || 0) + 1;
+                        activeCoupon.usages_count = newUsage;
+
+                        if (window._supabase) {
+                            try {
+                                if (activeCoupon.id) {
+                                    await window._supabase.from('coupons').update({ usages_count: newUsage }).eq('id', activeCoupon.id);
+                                }
+                            } catch (e) {
+                                try {
+                                    await window._supabase.from('coupons').update({ usages_count: newUsage }).eq('code', activeCoupon.code);
+                                } catch (err) {}
+                            }
+                        }
+
+                        try {
+                            let localCoupons = JSON.parse(localStorage.getItem('local_coupons_data') || '[]');
+                            let item = localCoupons.find(c => String(c.id) === String(activeCoupon.id) || (c.code || '').trim().toUpperCase() === activeCoupon.code);
+                            if (item) {
+                                item.usages_count = newUsage;
+                                localStorage.setItem('local_coupons_data', JSON.stringify(localCoupons));
+                            }
+                        } catch (err) {}
+                    })();
+                }
+
+                message += `\n\n*${isAr ? 'المجموع النهائي' : 'GRAND TOTAL'}*: ${finalTotal.toLocaleString()} ${isAr ? 'ر.ي' : 'YER'}`;
+
+                let whatsappNumber = '967777777777';
+                if (window.siteSettings && window.siteSettings.whatsapp_number && window.siteSettings.whatsapp_number !== 'undefined') {
+                    whatsappNumber = window.siteSettings.whatsapp_number;
+                }
+
+                const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+                window.open(waUrl, '_blank');
+            };
+
+            renderCart();
+        });
+    </script>
+</body>
+</html>

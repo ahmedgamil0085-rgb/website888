@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a1a">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>متجر ويب ميكرز الإلكتروني | WebMakers Store</title>
+    <meta name="title" content="متجر ويب ميكرز الإلكتروني | WebMakers Store">
+    <meta name="description" content="تسوق أحدث المنتجات والعروض الحصرية مع متجر ويب ميكرز الإلكتروني. منتجات متنوعة، جودة عالية، وتوصيل سريع وخدمة عملاء VIP.">
+    <meta name="keywords" content="متجر ويب ميكرز, متجر الكتروني, تسوق اونلاين, عروض حصرية, منتجات فاخرة, WebMakers Store, Online Shopping, E-Commerce Store">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="Arabic">
+    <meta name="author" content="WebMakers Technical Team">
+
+    <!-- Alternate Languages (Hreflang) -->
+    <link rel="alternate" hreflang="ar" href="https://webmakers.com/index.html">
+    <link rel="alternate" hreflang="en" href="https://webmakers.com/index.html?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://webmakers.com/index.html">
+
+    <!-- Open Graph / Facebook / WhatsApp Social Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://webmakers.com/index.html">
+    <meta property="og:title" content="متجر ويب ميكرز الإلكتروني | WebMakers Store">
+    <meta property="og:description" content="تسوق أحدث المنتجات والعروض الحصرية مع متجر ويب ميكرز الإلكتروني. منتجات متنوعة، جودة عالية، وتوصيل سريع وخدمة عملاء VIP.">
+    <meta property="og:image" content="https://webmakers.com/logo.png">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://webmakers.com/index.html">
+    <meta property="twitter:title" content="متجر ويب ميكرز الإلكتروني | WebMakers Store">
+    <meta property="twitter:description" content="تسوق أحدث المنتجات والعروض الحصرية مع متجر ويب ميكرز الإلكتروني. منتجات متنوعة، جودة عالية، وتوصيل سريع وخدمة عملاء VIP.">
+    <meta property="twitter:image" content="https://webmakers.com/logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://webmakers.com/index.html">
+
+    <!-- Structured Data: OnlineStore Schema (JSON-LD) for Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "OnlineStore",
+      "name": "WebMakers Store - متجر ويب ميكرز الإلكتروني",
+      "image": "https://webmakers.com/logo.png",
+      "@id": "https://webmakers.com/#store",
+      "url": "https://webmakers.com/",
+      "telephone": "+967777777777",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "الشارع الرئيسي - المركز التجاري",
+        "addressLocality": "صنعاء",
+        "addressCountry": "YE"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "128"
+      },
+      "hasMenu": "https://webmakers.com/menu.html"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=El+Messiri:wght@700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- Supabase JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="theme.min.css?v=8.0">
+    <link rel="stylesheet" href="style.min.css?v=8.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <!-- Masterpiece Page Preloader -->
+    <div id="pagePreloader" class="page-preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo-wrapper">
+                <img src="logo.png" alt="WebMakers Logo" class="preloader-logo">
+                <div class="preloader-glow-ring"></div>
+            </div>
+            <div class="preloader-brand">WebMakers</div>
+            <div class="preloader-text" data-ar="جاري تحضير تجربة التسوق المميزة..." data-en="Preparing Your Shopping Experience...">جاري تحضير تجربة التسوق المميزة...</div>
+            <div class="preloader-bar-wrapper">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Cinematic Background Sparkles -->
+    <div class="global-sparkles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Master Header Section -->
+    <header role="banner">
+        <nav class="yt-header-nav container" role="navigation" aria-label="القائمة الرئيسية للموقع">
+            <!-- 1. Right Section: Hamburger Menu + Logo & Store Badge -->
+            <div class="yt-nav-right">
+                <button class="mobile-nav-toggle" id="mobileNavToggle" title="القائمة / Menu" aria-label="فتح القائمة الجانبية">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <a href="index.html" class="logo" aria-label="متجر ويب ميكرز الإلكتروني - الرئيسية">
+                    <img src="logo.png" alt="شعار متجر ويب ميكرز الإلكتروني" class="logo-img">
+                    <span class="logo-text">WebMakers</span>
+                    <span class="yt-saas-badge">SA</span>
+                </a>
+            </div>
+
+            <!-- 2. Center Section: YouTube-Style Search Bar -->
+            <div class="yt-nav-center">
+                <div class="yt-search-form nav-search-trigger" role="button" aria-label="بحث ذكي AI">
+                    <span class="yt-search-mobile-label yt-search-label" data-ar="بحث ذكي AI ✨" data-en="AI Search ✨">بحث ذكي AI ✨</span>
+                    <button class="yt-search-btn nav-search-trigger" type="button" title="بحث بالذكاء الاصطناعي / AI Search" aria-label="بحث بالذكاء الاصطناعي">
+                        <svg class="ai-search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="10" cy="10" r="5.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.5 14.5L19.5 19.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                            <path d="M16.5 1.5C16.5 3.8 15.2 4.8 13.5 5C15.2 5.2 16.5 6.2 16.5 8.5C16.5 6.2 17.8 5.2 19.5 5C17.8 4.8 16.5 3.8 16.5 1.5Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3. Left Section: Actions -->
+            <div class="yt-nav-left">
+                <div class="nav-actions-luxury yt-actions" role="toolbar" aria-label="أدوات التحكم السريع">
+                    <div class="header-cart-wishlist-capsule" role="group" aria-label="المفضلة وسلة المشتريات">
+                        <a href="wishlist.html" class="nav-badge-wrapper" title="المفضلة / Wishlist" aria-label="عرض قائمة المنتجات المفضلة">
+                            <i class="far fa-heart" aria-hidden="true"></i>
+                            <span class="nav-badge wishlist-count-badge hidden" aria-live="polite">0</span>
+                        </a>
+                        <span class="capsule-divider" aria-hidden="true"></span>
+                        <a href="cart.html" class="nav-badge-wrapper" title="السلة / Cart" aria-label="عرض سلة المشتريات">
+                            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="nav-badge cart-count-badge hidden" aria-live="polite">0</span>
+                        </a>
+                    </div>
+                    <div class="luxury-lang-dropdown desktop-lang-dropdown yt-lang-dropdown" role="region" aria-label="قائمة اختيار اللغة">
+                        <div class="lld-trigger">
+                            <i class="fas fa-globe lld-globe"></i>
+                            <span class="lld-current-lang">العربية</span>
+                            <i class="fas fa-chevron-down lld-arrow"></i>
+                        </div>
+                        <div class="lld-menu">
+                            <div class="lld-item active" data-lang="ar">
+                                <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                            <div class="lld-item" data-lang="en">
+                                <span><span class="flag-icon">🇬🇧</span> English</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Master Hero Announcements Slider (مربوط بجدول public.announcements) -->
+    <section class="hero-premium hero-slider-section" id="heroSliderSection">
+        <div class="hero-slider-wrapper" id="heroSliderWrapper">
+            <!-- Dynamic Slides Injected from public.announcements via JS -->
+            <div class="hero-slide active loading-placeholder">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-subtitle reveal" data-ar="مرحباً بكم في متجر ويب ميكرز الفاخر" data-en="Welcome to WebMakers Luxury Store">
+                        <i class="fas fa-sparkles"></i> مرحباً بكم في متجر ويب ميكرز الفاخر
+                    </div>
+                    <h1 class="hero-title hero-title-compact reveal" data-ar="وجهتك الأولى للتسوق الإلكتروني الأرقى والأشمل" data-en="Your Ultimate Destination for Luxury Online Shopping">
+                        وجهتك الأولى <span>للتسوق الإلكتروني الأرقى والأشمل</span>
+                    </h1>
+                    <p class="hero-description reveal" data-ar="اكتشف تشكيلاتنا الحصرية من أحدث الأجهزة المنزلية، الإلكترونيات، الإضاءة والمستلزمات الكهربائية بجودة مضمونة 100% وتوصيل سريع إلى باب منزلك." data-en="Discover our exclusive collections of home appliances, electronics, lighting, and power supplies with 100% guaranteed authenticity and express doorstep delivery.">
+                        اكتشف تشكيلاتنا الحصرية من أحدث الأجهزة المنزلية، الإلكترونيات، الإضاءة والمستلزمات الكهربائية بجودة مضمونة 100% وتوصيل سريع إلى باب منزلك.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation Container -->
+        <div class="hero-slider-nav-container">
+            <!-- Slider Arrows (Glassmorphic) -->
+            <button class="hero-slider-arrow hero-slider-prev" id="heroSliderPrev" title="السابق" aria-label="السابق">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <!-- Slider Dots (Glassmorphic) -->
+            <div class="hero-slider-dots" id="heroSliderDots"></div>
+            <!-- Slider Arrows (Glassmorphic) -->
+            <button class="hero-slider-arrow hero-slider-next" id="heroSliderNext" title="التالي" aria-label="التالي">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Brands & Partners Luxury Slider (سلايدر الشركات والعلامات التجارية) -->
+    <section id="brandsSlider" class="brands-slider-luxury">
+        <div class="container">
+            <div class="brands-track">
+                <!-- Set 1 of brands -->
+                <div class="brand-item" title="Samsung"><i class="fab fa-android brand-icon"></i><span class="brand-name">Samsung</span></div>
+                <div class="brand-item" title="Apple"><i class="fab fa-apple brand-icon"></i><span class="brand-name">Apple</span></div>
+                <div class="brand-item" title="Sony"><i class="fas fa-gamepad brand-icon"></i><span class="brand-name">Sony</span></div>
+                <div class="brand-item" title="LG"><i class="fas fa-tv brand-icon"></i><span class="brand-name">LG</span></div>
+                <div class="brand-item" title="Panasonic"><i class="fas fa-satellite-dish brand-icon"></i><span class="brand-name">Panasonic</span></div>
+                <div class="brand-item" title="Philips"><i class="fas fa-lightbulb brand-icon"></i><span class="brand-name">Philips</span></div>
+                <div class="brand-item" title="Bosch"><i class="fas fa-bolt brand-icon"></i><span class="brand-name">Bosch</span></div>
+                <div class="brand-item" title="Dell"><i class="fas fa-laptop brand-icon"></i><span class="brand-name">Dell</span></div>
+                <div class="brand-item" title="Toshiba"><i class="fas fa-microchip brand-icon"></i><span class="brand-name">Toshiba</span></div>
+                <div class="brand-item" title="Huawei"><i class="fas fa-mobile-alt brand-icon"></i><span class="brand-name">Huawei</span></div>
+                <!-- Set 2 of brands -->
+                <div class="brand-item" title="Samsung"><i class="fab fa-android brand-icon"></i><span class="brand-name">Samsung</span></div>
+                <div class="brand-item" title="Apple"><i class="fab fa-apple brand-icon"></i><span class="brand-name">Apple</span></div>
+                <div class="brand-item" title="Sony"><i class="fas fa-gamepad brand-icon"></i><span class="brand-name">Sony</span></div>
+                <div class="brand-item" title="LG"><i class="fas fa-tv brand-icon"></i><span class="brand-name">LG</span></div>
+                <div class="brand-item" title="Panasonic"><i class="fas fa-satellite-dish brand-icon"></i><span class="brand-name">Panasonic</span></div>
+                <div class="brand-item" title="Philips"><i class="fas fa-lightbulb brand-icon"></i><span class="brand-name">Philips</span></div>
+                <div class="brand-item" title="Bosch"><i class="fas fa-bolt brand-icon"></i><span class="brand-name">Bosch</span></div>
+                <div class="brand-item" title="Dell"><i class="fas fa-laptop brand-icon"></i><span class="brand-name">Dell</span></div>
+                <div class="brand-item" title="Toshiba"><i class="fas fa-microchip brand-icon"></i><span class="brand-name">Toshiba</span></div>
+                <div class="brand-item" title="Huawei"><i class="fas fa-mobile-alt brand-icon"></i><span class="brand-name">Huawei</span></div>
+                <!-- Set 3 of brands -->
+                <div class="brand-item" title="Samsung"><i class="fab fa-android brand-icon"></i><span class="brand-name">Samsung</span></div>
+                <div class="brand-item" title="Apple"><i class="fab fa-apple brand-icon"></i><span class="brand-name">Apple</span></div>
+                <div class="brand-item" title="Sony"><i class="fas fa-gamepad brand-icon"></i><span class="brand-name">Sony</span></div>
+                <div class="brand-item" title="LG"><i class="fas fa-tv brand-icon"></i><span class="brand-name">LG</span></div>
+                <div class="brand-item" title="Panasonic"><i class="fas fa-satellite-dish brand-icon"></i><span class="brand-name">Panasonic</span></div>
+                <div class="brand-item" title="Philips"><i class="fas fa-lightbulb brand-icon"></i><span class="brand-name">Philips</span></div>
+                <div class="brand-item" title="Bosch"><i class="fas fa-bolt brand-icon"></i><span class="brand-name">Bosch</span></div>
+                <div class="brand-item" title="Dell"><i class="fas fa-laptop brand-icon"></i><span class="brand-name">Dell</span></div>
+                <div class="brand-item" title="Toshiba"><i class="fas fa-microchip brand-icon"></i><span class="brand-name">Toshiba</span></div>
+                <div class="brand-item" title="Huawei"><i class="fas fa-mobile-alt brand-icon"></i><span class="brand-name">Huawei</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Categories Showcase (أقسام المنتجات الفاخرة) -->
+    <section id="homeCategories" class="home-categories-section reveal">
+        <div class="container">
+            <div class="section-header-mini-categories">
+                <h3 data-ar="أقسام مميزة" data-en="Featured Categories"><i class="fas fa-layer-group"></i> أقسام مميزة</h3>
+            </div>
+            <div class="categories-slider-wrapper">
+                <div id="dynamicHomeCategories" class="categories-grid-luxury">
+                    <!-- Dynamic Content from JS -->
+                </div>
+                <!-- Pagination Dots during scrolling -->
+                <div class="categories-dots" id="categoriesDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Showcase (معرض المنتجات المميزة) -->
+    <section id="specialProductsSection" class="special-menu-premium">
+        <div class="container">
+            <div class="section-header-luxury-mini reveal">
+                <h3 data-ar="منتجات مختارة" data-en="Selected Products"><i class="fas fa-tags"></i> منتجات مختارة</h3>
+            </div>
+            <div id="specialDishesGrid" class="menu-grid">
+                <!-- Dynamic Content from JS -->
+            </div>
+            <div class="view-all-box reveal">
+                <a href="menu.html" class="btn-luxury" data-ar="تصفح جميع المنتجات" data-en="Shop All Products">تصفح جميع المنتجات <i class="fas fa-store"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Hero Announcements Slider (مربوط بجدول public.announcements) -->
+    <section class="hero-premium hero-slider-section" id="promoSliderSection">
+        <div class="hero-slider-wrapper" id="promoSliderWrapper">
+            <!-- Dynamic Slides Injected from public.announcements via JS -->
+            <div class="hero-slide active loading-placeholder">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-subtitle reveal" data-ar="مرحباً بكم في متجر ويب ميكرز الفاخر" data-en="Welcome to WebMakers Luxury Store">
+                        <i class="fas fa-sparkles"></i> مرحباً بكم في متجر ويب ميكرز الفاخر
+                    </div>
+                    <h1 class="hero-title hero-title-compact reveal" data-ar="وجهتك الأولى للتسوق الإلكتروني الأرقى والأشمل" data-en="Your Ultimate Destination for Luxury Online Shopping">
+                        وجهتك الأولى <span>للتسوق الإلكتروني الأرقى والأشمل</span>
+                    </h1>
+                    <p class="hero-description reveal" data-ar="اكتشف تشكيلاتنا الحصرية من أحدث الأجهزة المنزلية، الإلكترونيات، الإضاءة والمستلزمات الكهربائية بجودة مضمونة 100% وتوصيل سريع إلى باب منزلك." data-en="Discover our exclusive collections of home appliances, electronics, lighting, and power supplies with 100% guaranteed authenticity and express doorstep delivery.">
+                        اكتشف تشكيلاتنا الحصرية من أحدث الأجهزة المنزلية، الإلكترونيات، الإضاءة والمستلزمات الكهربائية بجودة مضمونة 100% وتوصيل سريع إلى باب منزلك.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation Container -->
+        <div class="hero-slider-nav-container">
+            <!-- Slider Arrows (Glassmorphic) -->
+            <button class="hero-slider-arrow hero-slider-prev" id="promoSliderPrev" title="السابق" aria-label="السابق">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <!-- Slider Dots (Glassmorphic) -->
+            <div class="hero-slider-dots" id="promoSliderDots"></div>
+            <!-- Slider Arrows (Glassmorphic) -->
+            <button class="hero-slider-arrow hero-slider-next" id="promoSliderNext" title="التالي" aria-label="التالي">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="العودة للأعلى"></button>
+
+    <div class="whatsapp-wrapper">
+        <div id="whatsappWidget" class="whatsapp-chat-widget">
+            <div class="widget-header">
+                <div class="header-info">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-ar="خدمة عملاء متجر ويب ميكرز" data-en="WebMakers Store Customer Service">خدمة عملاء متجر ويب ميكرز</span>
+                </div>
+                <i class="fas fa-times close-widget" id="closeWhatsapp"></i>
+            </div>
+            <div class="widget-body">
+                <div class="chat-msg welcome-msg" data-ar="مرحباً بك في متجر WebMakers الإلكتروني! 🛍️" data-en="Welcome to WebMakers Online Store! 🛍️">
+                    مرحباً بك في متجر WebMakers الإلكتروني! 🛍️
+                </div>
+                <div class="chat-msg" data-ar="يسعدنا خدمتك، يرجى اختيار القسم المطلوب لمساعدتك فوراً:" data-en="We are pleased to serve you, please choose the department:">
+                    يسعدنا خدمتك، يرجى اختيار القسم المطلوب لمساعدتك فوراً:
+                </div>
+                <div class="chat-options">
+                    <a href="https://wa.me/96700000000" target="_blank" class="chat-option">
+                        <span data-ar="قسم المبيعات والطلبات" data-en="Sales & Orders">قسم المبيعات والطلبات</span>
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                    <a href="https://wa.me/96700000000" target="_blank" class="chat-option">
+                        <span data-ar="متابعة الشحن والتوصيل" data-en="Shipping & Delivery">متابعة الشحن والتوصيل</span>
+                        <i class="fas fa-truck-fast"></i>
+                    </a>
+                    <a href="https://wa.me/96700000000" target="_blank" class="chat-option">
+                        <span data-ar="الدعم الفني والاستفسارات" data-en="Customer Support">الدعم الفني والاستفسارات</span>
+                        <i class="fas fa-headset"></i>
+                    </a>
+                    <a href="https://wa.me/96700000000" target="_blank" class="chat-option">
+                        <span data-ar="الشكاوي والاقتراحات" data-en="Complaints and Suggestions">الشكاوي والاقتراحات</span>
+                        <i class="fas fa-comment-dots"></i>
+                    </a>
+                </div>
+                <div class="chat-footer-msg" data-ar="تسوق ممتع وخدمة تليق بكم دائماً 🙏" data-en="Enjoy your shopping, we value your trust 🙏">
+                    تسوق ممتع وخدمة تليق بكم دائماً 🙏
+                </div>
+            </div>
+        </div>
+        <div id="whatsappToggle" class="whatsapp-float">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+    </div>
+
+
+
+    <!-- Slim Trust & Features Bar (شريط مزايا المتجر النحيف) -->
+    <section id="storeFeatures" class="store-trust-bar-slim" aria-label="مزايا المتجر">
+        <div class="container">
+            <div class="trust-bar-wrapper">
+                <div class="trust-bar-item">
+                    <div class="trust-bar-icon">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <div class="trust-bar-info">
+                        <strong data-ar="شحن وتوصيل" data-en="Fast Express">شحن وتوصيل</strong>
+                        <span data-ar="سريع وموثوق" data-en="Fast & Reliable">سريع وموثوق</span>
+                    </div>
+                </div>
+
+                <div class="trust-bar-divider"></div>
+
+                <div class="trust-bar-item">
+                    <div class="trust-bar-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="trust-bar-info">
+                        <strong data-ar="منتجات أصلية" data-en="100% Authentic">منتجات أصلية</strong>
+                        <span data-ar="جودة مضمونة" data-en="Quality Guarantee">جودة مضمونة</span>
+                    </div>
+                </div>
+
+                <div class="trust-bar-divider"></div>
+
+                <div class="trust-bar-item">
+                    <div class="trust-bar-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="trust-bar-info">
+                        <strong data-ar="دفع آمن" data-en="Secure Payment">دفع آمن</strong>
+                        <span data-ar="طرق متعددة" data-en="Multiple Methods">طرق متعددة</span>
+                    </div>
+                </div>
+
+                <div class="trust-bar-divider"></div>
+
+                <div class="trust-bar-item">
+                    <div class="trust-bar-icon">
+                        <i class="fas fa-rotate-left"></i>
+                    </div>
+                    <div class="trust-bar-info">
+                        <strong data-ar="ضمان واستبدال" data-en="Easy Returns">ضمان واستبدال</strong>
+                        <span data-ar="إرجاع مرن" data-en="Flexible Returns">إرجاع مرن</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer>
+
+        <div class="container">
+            <!-- Footer Grid -->
+            <div class="footer-grid">
+                <!-- Column 1: Links -->
+                <div class="footer-col reveal">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-ar="الرئيسية" data-en="Home"><i class="fas fa-house"></i> الرئيسية</a></li>
+                        <li><a href="menu.html" data-ar="تصفح المنتجات" data-en="All Products"><i class="fas fa-store"></i> تصفح المنتجات</a></li>
+                        <li><a href="about.html" data-ar="من نحن" data-en="About Us"><i class="fas fa-circle-info"></i> من نحن</a></li>
+                        <li><a href="cart.html" data-ar="سلة المشتريات" data-en="Shopping Cart"><i class="fas fa-shopping-cart"></i> سلة المشتريات</a></li>
+                        <li><a href="wishlist.html" data-ar="قائمة الرغبات" data-en="Wishlist"><i class="fas fa-heart"></i> قائمة الرغبات</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Customer Service & Shipping Hours -->
+                <div class="footer-col reveal" style="transition-delay: 0.1s;">
+                    <h4 data-ar="خدمة العملاء والشحن" data-en="Customer Support & Shipping">خدمة العملاء والشحن</h4>
+                    <div class="working-hours-card">
+                        <div class="hour-item">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <div class="hour-details">
+                                <span class="day" data-ar="الطلبات والتوصيل" data-en="Orders & Delivery">الطلبات والتوصيل</span>
+                                <span class="time" data-ar="24/7 طوال الأسبوع" data-en="24/7 All Week">24/7 طوال الأسبوع</span>
+                            </div>
+                        </div>
+                        <div class="hour-item">
+                            <i class="fa-solid fa-headset"></i>
+                            <div class="hour-details">
+                                <span class="day" data-ar="الدعم والمبيعات" data-en="Support & Sales">الدعم والمبيعات</span>
+                                <span class="time" data-ar="9:00 ص - 11:00 م" data-en="9:00 AM - 11:00 PM">9:00 ص - 11:00 م</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-icons-v2">
+                        <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/96700000000" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col reveal" style="transition-delay: 0.2s;">
+                    <h4 data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</h4>
+                    <ul class="contact-info-list">
+                        <li>
+                            <a href="https://maps.google.com" target="_blank">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span data-ar="صنعاء، الحي السياسي، شارع بغداد" data-en="Baghdad St, Political District, Sana'a">صنعاء، الحي السياسي، شارع بغداد</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+967777777777">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span dir="ltr"><span class="country-code">+967</span> 777 777 777</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+9671444444">
+                                <i class="fa-solid fa-phone"></i>
+                                <span dir="ltr"><span class="country-code">+967</span> 1 444 444</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:vip@webmakers-ye.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>vip@webmakers-ye.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-ar="خدمة العملاء" data-en="Customer Service">خدمة العملاء</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Mobile Only Column: Important Links -->
+                <div class="footer-col reveal mobile-only-important-col" style="transition-delay: 0.3s;">
+                    <h4 data-ar="روابط تهمك" data-en="Important Links">روابط تهمك</h4>
+                    <ul class="contact-info-list">
+                        <li>
+                            <a href="privacy-policy.html">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="careers.html">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span data-ar="الوظائف" data-en="Careers">الوظائف</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span data-ar="الأسئلة الشائعة" data-en="FAQs">الأسئلة الشائعة</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="luxury-lang-dropdown">
+                                <div class="lld-trigger">
+                                    <i class="fas fa-globe lld-globe"></i>
+                                    <span class="lld-current-lang">العربية</span>
+                                    <i class="fas fa-chevron-down lld-arrow"></i>
+                                </div>
+                                <div class="lld-menu">
+                                    <div class="lld-item active" data-lang="ar">
+                                        <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                        <i class="fas fa-check lld-check"></i>
+                                    </div>
+                                    <div class="lld-item" data-lang="en">
+                                        <span><span class="flag-icon">🇬🇧</span> English</span>
+                                        <i class="fas fa-check lld-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="copyright-v2" data-ar="&copy; 2026 جميع الحقوق محفوظة لـ <b>متجر ويب ميكرز الإلكتروني | WebMakers Store</b>" data-en="&copy; 2026 All Rights Reserved to <b>WebMakers Store</b>">
+                    &copy; 2026 جميع الحقوق محفوظة لـ <b>متجر ويب ميكرز الإلكتروني | WebMakers Store</b>
+                </div>
+
+                <!-- Desktop Bottom Links (Visible ONLY on Desktop/Laptop) -->
+                <div class="footer-bottom-links desktop-bottom-links">
+                    <div class="luxury-lang-dropdown">
+                        <div class="lld-trigger">
+                            <i class="fas fa-globe lld-globe"></i>
+                            <span class="lld-current-lang">العربية</span>
+                            <i class="fas fa-chevron-down lld-arrow"></i>
+                        </div>
+                        <div class="lld-menu">
+                            <div class="lld-item active" data-lang="ar">
+                                <span><span class="flag-icon">🇾🇪</span> العربية</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                            <div class="lld-item" data-lang="en">
+                                <span><span class="flag-icon">🇬🇧</span> English</span>
+                                <i class="fas fa-check lld-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="privacy-policy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy"><i class="fa-solid fa-shield-halved"></i> سياسة الخصوصية</a>
+                    <a href="careers.html" data-ar="الوظائف" data-en="Careers"><i class="fa-solid fa-briefcase"></i> الوظائف</a>
+                    <a href="faq.html" data-ar="الأسئلة الشائعة" data-en="FAQs"><i class="fa-solid fa-circle-question"></i> الأسئلة الشائعة</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.min.js?v=8.0"></script>
+</body>
+</html>
